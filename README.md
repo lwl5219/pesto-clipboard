@@ -97,15 +97,10 @@ Clipboard history is stored in a Core Data SQLite database at:
 
 **App Exclusions:** You can exclude specific apps from clipboard monitoring in Preferences. Common password managers (1Password, Bitwarden, etc.) are excluded by default.
 
-To reset the app, quit it first, then:
+To forcefully delete all clipboard history, quit the app and run:
 
 ```bash
-# Delete clipboard history (Core Data)
 rm -rf ~/Library/Application\ Support/PestoClipboard/
-
-# Delete settings/preferences (to see onboarding again, etc.)
-rm ~/Library/Preferences/com.pestoclipboard.PestoClipboard.plist
-killall cfprefsd
 ```
 
 ## License

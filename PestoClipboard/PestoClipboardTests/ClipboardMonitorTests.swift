@@ -14,7 +14,7 @@ final class MockClipboardHistoryManager: ClipboardHistoryManaging {
 
     private(set) var addTextItemCalls: [(text: String, rtfData: Data?)] = []
     private(set) var addImageItemCalls: [(imageData: Data, thumbnailData: Data?)] = []
-    private(set) var addFileItemCalls: [(urls: [URL], thumbnailData: Data?)] = []
+    private(set) var addFileItemCalls: [[URL]] = []
 
     private(set) var moveToTopCalls: [ClipboardItem] = []
     private(set) var togglePinCalls: [ClipboardItem] = []
@@ -43,8 +43,8 @@ final class MockClipboardHistoryManager: ClipboardHistoryManaging {
         addImageItemCalls.append((imageData: imageData, thumbnailData: thumbnailData))
     }
 
-    func addFileItem(urls: [URL], thumbnailData: Data?) {
-        addFileItemCalls.append((urls: urls, thumbnailData: thumbnailData))
+    func addFileItem(urls: [URL]) {
+        addFileItemCalls.append(urls)
     }
 
     func moveToTop(_ item: ClipboardItem) {
@@ -261,11 +261,10 @@ struct ClipboardMonitorTests {
         let mock = MockClipboardHistoryManager()
         let urls = [URL(fileURLWithPath: "/tmp/test.txt")]
 
-        mock.addFileItem(urls: urls, thumbnailData: nil)
+        mock.addFileItem(urls: urls)
 
         #expect(mock.addFileItemCalls.count == 1)
-        #expect(mock.addFileItemCalls[0].urls == urls)
-        #expect(mock.addFileItemCalls[0].thumbnailData == nil)
+        #expect(mock.addFileItemCalls[0] == urls)
     }
 
     @Test func mockTracksClearAllCalls() {
