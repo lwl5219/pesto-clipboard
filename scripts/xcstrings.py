@@ -38,6 +38,7 @@ LANGUAGES = {
     "es": "Spanish",
     "fr": "French",
     "hi": "Hindi",
+    "id": "Indonesian",
     "it": "Italian",
     "ja": "Japanese",
     "ko": "Korean",

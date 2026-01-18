@@ -46,6 +46,12 @@
             "value" : "%lld"
           }
         },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld"
+          }
+        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
@@ -132,6 +138,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "%lld फ़ाइलें"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld file"
           }
         },
         "it" : {
@@ -222,6 +234,12 @@
             "value" : "(%lld)"
           }
         },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "(%lld)"
+          }
+        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
@@ -266,7 +284,16 @@
         }
       }
     },
-    "1 day" : {},
+    "1 day" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "1 hari"
+          }
+        }
+      }
+    },
     "1 hour" : {
       "localizations" : {
         "de" : {
@@ -274,13 +301,55 @@
             "state" : "translated",
             "value" : "1 Stunde"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "1 jam"
+          }
         }
       }
     },
-    "12 hours" : {},
-    "3 hours" : {},
-    "30 days" : {},
-    "7 days" : {},
+    "12 hours" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "12 jam"
+          }
+        }
+      }
+    },
+    "3 hours" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "3 jam"
+          }
+        }
+      }
+    },
+    "30 days" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "30 hari"
+          }
+        }
+      }
+    },
+    "7 days" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "7 hari"
+          }
+        }
+      }
+    },
     "About Pesto Clipboard" : {
       "localizations" : {
         "ca" : {
@@ -323,6 +392,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Pesto Clipboard के बारे में"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tentang Pesto Clipboard"
           }
         },
         "it" : {
@@ -413,6 +488,12 @@
             "value" : "एक्सेसिबिलिटी अनुमति आवश्यक"
           }
         },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Izin aksesibilitas diperlukan"
+          }
+        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
@@ -499,6 +580,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "दिखावट"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tampilan"
           }
         },
         "it" : {
@@ -589,6 +676,12 @@
             "value" : "क्या आप वाकई क्लिपबोर्ड इतिहास साफ़ करना चाहते हैं?"
           }
         },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Apakah Anda yakin ingin menghapus riwayat papan klip?"
+          }
+        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
@@ -633,7 +726,16 @@
         }
       }
     },
-    "Auto-Delete" : {},
+    "Auto-Delete" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hapus Otomatis"
+          }
+        }
+      }
+    },
     "Automatically start Pesto Clipboard when you log in" : {
       "localizations" : {
         "ca" : {
@@ -676,6 +778,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "लॉगिन पर Pesto Clipboard स्वचालित रूप से शुरू करें"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Jalankan Pesto Clipboard secara otomatis saat Anda masuk"
           }
         },
         "it" : {
@@ -766,6 +874,12 @@
             "value" : "पीछे"
           }
         },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kembali"
+          }
+        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
@@ -852,6 +966,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "व्यवहार"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Perilaku"
           }
         },
         "it" : {
@@ -942,6 +1062,12 @@
             "value" : "रद्द करें"
           }
         },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Batal"
+          }
+        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
@@ -986,7 +1112,16 @@
         }
       }
     },
-    "Capture" : {},
+    "Capture" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tangkap"
+          }
+        }
+      }
+    },
     "Capture Types" : {
       "extractionState" : "stale",
       "localizations" : {
@@ -1030,6 +1165,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "कैप्चर प्रकार"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Jenis Tangkapan"
           }
         },
         "it" : {
@@ -1120,6 +1261,12 @@
             "value" : "कहीं से भी क्लिपबोर्ड इतिहास खोलने के लिए कीबोर्ड शॉर्टकट चुनें।"
           }
         },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pilih pintasan keyboard untuk membuka riwayat papan klip dengan cepat dari mana saja."
+          }
+        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1206,6 +1353,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "क्लिपबोर्ड से कैप्चर करने के लिए सामग्री प्रकार चुनें।"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pilih jenis konten yang akan ditangkap dari papan klip."
           }
         },
         "it" : {
@@ -1296,6 +1449,12 @@
             "value" : "सारा इतिहास साफ़ करें"
           }
         },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hapus Semua Riwayat"
+          }
+        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1382,6 +1541,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "सब कुछ साफ़ करें (तारांकित सहित)"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hapus Semua (Termasuk Berbintang)"
           }
         },
         "it" : {
@@ -1472,6 +1637,12 @@
             "value" : "इतिहास साफ़ करें"
           }
         },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hapus Riwayat"
+          }
+        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1558,6 +1729,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "इतिहास साफ़ करें (तारांकित रखें)"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hapus Riwayat (Simpan Berbintang)"
           }
         },
         "it" : {
@@ -1648,6 +1825,12 @@
             "value" : "इतिहास साफ़ करना पूर्ववत नहीं किया जा सकता।"
           }
         },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Menghapus riwayat tidak dapat dibatalkan."
+          }
+        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1734,6 +1917,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "सिस्टम सेटिंग्स खोलने के लिए क्लिक करें"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Klik untuk membuka Pengaturan Sistem"
           }
         },
         "it" : {
@@ -1824,6 +2013,12 @@
             "value" : "इन ऐप्स की क्लिपबोर्ड सामग्री कैप्चर नहीं होगी।"
           }
         },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Konten papan klip dari aplikasi ini tidak akan ditangkap."
+          }
+        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1912,6 +2107,12 @@
             "value" : "Pesto Clipboard का व्यवहार कॉन्फ़िगर करें।"
           }
         },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Konfigurasikan perilaku Pesto Clipboard."
+          }
+        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1956,7 +2157,16 @@
         }
       }
     },
-    "Content Types" : {},
+    "Content Types" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Jenis Konten"
+          }
+        }
+      }
+    },
     "Copy something to get started" : {
       "localizations" : {
         "ca" : {
@@ -1999,6 +2209,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "शुरू करने के लिए कुछ कॉपी करें"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Salin sesuatu untuk memulai"
           }
         },
         "it" : {
@@ -2089,6 +2305,12 @@
             "value" : "क्लिपबोर्ड पर कॉपी करें"
           }
         },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Salin ke Papan Klip"
+          }
+        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2175,6 +2397,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "खतरनाक क्षेत्र"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zona Bahaya"
           }
         },
         "it" : {
@@ -2265,6 +2493,12 @@
             "value" : "जोड़ने की तारीख"
           }
         },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tanggal Ditambahkan"
+          }
+        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2351,6 +2585,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "डिफ़ॉल्ट: Cmd + Shift + V"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Default: Cmd + Shift + V"
           }
         },
         "it" : {
@@ -2441,6 +2681,12 @@
             "value" : "हटाएं"
           }
         },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hapus"
+          }
+        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2529,6 +2775,12 @@
             "value" : "हटाएं (⌫)"
           }
         },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hapus (⌫)"
+          }
+        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2573,7 +2825,16 @@
         }
       }
     },
-    "Delete items after:" : {},
+    "Delete items after:" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hapus item setelah:"
+          }
+        }
+      }
+    },
     "Edit" : {
       "localizations" : {
         "ca" : {
@@ -2616,6 +2877,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "संपादित करें"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Edit"
           }
         },
         "it" : {
@@ -2706,6 +2973,12 @@
             "value" : "क्लिपबोर्ड आइटम संपादित करें"
           }
         },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Edit Item Papan Klip"
+          }
+        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2750,10 +3023,46 @@
         }
       }
     },
-    "Error" : {},
-    "Failed to load clipboard history" : {},
-    "Failed to save clipboard item" : {},
-    "Failed to search clipboard history" : {},
+    "Error" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kesalahan"
+          }
+        }
+      }
+    },
+    "Failed to load clipboard history" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gagal memuat riwayat papan klip"
+          }
+        }
+      }
+    },
+    "Failed to save clipboard item" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gagal menyimpan item papan klip"
+          }
+        }
+      }
+    },
+    "Failed to search clipboard history" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gagal mencari riwayat papan klip"
+          }
+        }
+      }
+    },
     "Files" : {
       "localizations" : {
         "ca" : {
@@ -2796,6 +3105,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "फ़ाइलें"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "File"
           }
         },
         "it" : {
@@ -2886,6 +3201,12 @@
             "value" : "सामान्य"
           }
         },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Umum"
+          }
+        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2974,6 +3295,12 @@
             "value" : "शुरू करें"
           }
         },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mulai"
+          }
+        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
@@ -3060,6 +3387,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "इतिहास"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Riwayat"
           }
         },
         "it" : {
@@ -3151,6 +3484,12 @@
             "value" : "अनदेखा करें"
           }
         },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Abaikan"
+          }
+        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
@@ -3239,6 +3578,12 @@
             "value" : "अन्य उपकरणों से क्लिपबोर्ड को अनदेखा करें"
           }
         },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Abaikan papan klip dari perangkat lain"
+          }
+        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
@@ -3283,7 +3628,16 @@
         }
       }
     },
-    "Ignore password manager content" : {},
+    "Ignore password manager content" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Abaikan konten pengelola kata sandi"
+          }
+        }
+      }
+    },
     "Ignored Applications" : {
       "localizations" : {
         "ca" : {
@@ -3326,6 +3680,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "अनदेखे ऐप्स"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aplikasi yang Diabaikan"
           }
         },
         "it" : {
@@ -3416,6 +3776,12 @@
             "value" : "छवि"
           }
         },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gambar"
+          }
+        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
@@ -3502,6 +3868,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "छवियां"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gambar"
           }
         },
         "it" : {
@@ -3592,6 +3964,12 @@
             "value" : "आइटम चुनने के बाद तुरंत पेस्ट करें"
           }
         },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Langsung tempel setelah memilih item"
+          }
+        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
@@ -3678,6 +4056,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "कीबोर्ड शॉर्टकट"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pintasan Keyboard"
           }
         },
         "it" : {
@@ -3768,6 +4152,12 @@
             "value" : "लॉगिन पर शुरू करें"
           }
         },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Jalankan saat masuk"
+          }
+        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
@@ -3812,7 +4202,16 @@
         }
       }
     },
-    "Limits" : {},
+    "Limits" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Batas"
+          }
+        }
+      }
+    },
     "Maximum items:" : {
       "localizations" : {
         "ca" : {
@@ -3855,6 +4254,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "अधिकतम आइटम:"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Maksimum item:"
           }
         },
         "it" : {
@@ -3901,7 +4306,16 @@
         }
       }
     },
-    "Never" : {},
+    "Never" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tidak Pernah"
+          }
+        }
+      }
+    },
     "Next" : {
       "localizations" : {
         "ca" : {
@@ -3944,6 +4358,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "अगला"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Berikutnya"
           }
         },
         "it" : {
@@ -4034,6 +4454,12 @@
             "value" : "कोई क्लिपबोर्ड इतिहास नहीं"
           }
         },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tidak ada riwayat papan klip"
+          }
+        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
@@ -4120,6 +4546,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "कोई अनदेखा ऐप नहीं"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tidak ada aplikasi yang diabaikan"
           }
         },
         "it" : {
@@ -4210,6 +4642,12 @@
             "value" : "\"%@\" से मेल खाता कोई आइटम नहीं"
           }
         },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tidak ada item yang cocok dengan \"%@\""
+          }
+        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
@@ -4296,6 +4734,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "कोई परिणाम नहीं मिला"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tidak ada hasil ditemukan"
           }
         },
         "it" : {
@@ -4386,6 +4830,12 @@
             "value" : "कोई तारांकित आइटम नहीं"
           }
         },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tidak ada item berbintang"
+          }
+        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
@@ -4430,7 +4880,16 @@
         }
       }
     },
-    "OK" : {},
+    "OK" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "OK"
+          }
+        }
+      }
+    },
     "Open Pesto Clipboard:" : {
       "localizations" : {
         "ca" : {
@@ -4473,6 +4932,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Pesto Clipboard खोलें:"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Buka Pesto Clipboard:"
           }
         },
         "it" : {
@@ -4563,6 +5028,12 @@
             "value" : "मूल रूप में पेस्ट करें"
           }
         },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tempel Asli"
+          }
+        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
@@ -4649,6 +5120,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "सादे टेक्स्ट के रूप में पेस्ट करें"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tempel sebagai Teks Biasa"
           }
         },
         "it" : {
@@ -4739,6 +5216,12 @@
             "value" : "स्वचालित रूप से पेस्ट करें"
           }
         },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tempel otomatis"
+          }
+        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
@@ -4825,6 +5308,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "आइटम चुनने के बाद तुरंत पेस्ट करें"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Langsung tempel setelah memilih item"
           }
         },
         "it" : {
@@ -4915,6 +5404,12 @@
             "value" : "कैप्चर रोकें"
           }
         },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Jeda tangkapan"
+          }
+        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
@@ -4998,6 +5493,12 @@
           }
         },
         "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pesto Clipboard"
+          }
+        },
+        "id" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Pesto Clipboard"
@@ -5091,6 +5592,12 @@
             "value" : "Pesto Clipboard प्राथमिकताएं"
           }
         },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Preferensi Pesto Clipboard"
+          }
+        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
@@ -5177,6 +5684,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "सादा टेक्स्ट मोड बंद"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mode teks biasa MATI"
           }
         },
         "it" : {
@@ -5267,6 +5780,12 @@
             "value" : "सादा टेक्स्ट मोड चालू"
           }
         },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mode teks biasa AKTIF"
+          }
+        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
@@ -5353,6 +5872,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "प्राथमिकताएं"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Preferensi"
           }
         },
         "it" : {
@@ -5443,6 +5968,12 @@
             "value" : "बंद करें"
           }
         },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Keluar"
+          }
+        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
@@ -5529,6 +6060,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "बुनियादी सेटिंग्स के लिए सेटअप विज़ार्ड फिर से चलाएं।"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Jalankan ulang wizard pengaturan awal untuk mengonfigurasi pengaturan dasar."
           }
         },
         "it" : {
@@ -5619,6 +6156,12 @@
             "value" : "हाल ही में उपयोग किया गया"
           }
         },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Baru Digunakan"
+          }
+        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
@@ -5663,7 +6206,16 @@
         }
       }
     },
-    "Reducing this limit will delete older items immediately." : {},
+    "Reducing this limit will delete older items immediately." : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mengurangi batas ini akan langsung menghapus item yang lebih lama."
+          }
+        }
+      }
+    },
     "Resume capture" : {
       "localizations" : {
         "ca" : {
@@ -5706,6 +6258,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "कैप्चर फिर से शुरू करें"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lanjutkan tangkapan"
           }
         },
         "it" : {
@@ -5796,6 +6354,12 @@
             "value" : "सेटअप विज़ार्ड चलाएं"
           }
         },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Jalankan Wizard Pengaturan"
+          }
+        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
@@ -5882,6 +6446,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "सहेजें"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Simpan"
           }
         },
         "it" : {
@@ -5972,6 +6542,12 @@
             "value" : "खोजें"
           }
         },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cari"
+          }
+        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
@@ -6058,6 +6634,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "अपनी हॉटकी सेट करें"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Atur Tombol Pintasan Anda"
           }
         },
         "it" : {
@@ -6148,6 +6730,12 @@
             "value" : "सेटिंग्स"
           }
         },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pengaturan"
+          }
+        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
@@ -6234,6 +6822,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "सेटअप"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pengaturan"
           }
         },
         "it" : {
@@ -6324,6 +6918,12 @@
             "value" : "क्लिपबोर्ड दिखाएं"
           }
         },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tampilkan Papan Klip"
+          }
+        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
@@ -6410,6 +7010,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "केवल तारांकित दिखाएं"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tampilkan hanya berbintang"
           }
         },
         "it" : {
@@ -6500,6 +7106,12 @@
             "value" : "केवल तारांकित दिखा रहे हैं"
           }
         },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Menampilkan hanya berbintang"
+          }
+        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
@@ -6588,6 +7200,12 @@
             "value" : "इसके अनुसार क्रमबद्ध करें:"
           }
         },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Urutkan berdasarkan:"
+          }
+        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
@@ -6632,7 +7250,16 @@
         }
       }
     },
-    "Sources" : {},
+    "Sources" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sumber"
+          }
+        }
+      }
+    },
     "Star items to keep them safe" : {
       "localizations" : {
         "ca" : {
@@ -6675,6 +7302,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "सुरक्षित रखने के लिए आइटम तारांकित करें"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Beri bintang item untuk menyimpannya"
           }
         },
         "it" : {
@@ -6721,7 +7354,16 @@
         }
       }
     },
-    "Starred items are never automatically deleted." : {},
+    "Starred items are never automatically deleted." : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Item berbintang tidak pernah dihapus secara otomatis."
+          }
+        }
+      }
+    },
     "Start Pesto Clipboard when you log in" : {
       "localizations" : {
         "ca" : {
@@ -6764,6 +7406,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "लॉगिन पर Pesto Clipboard शुरू करें"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Jalankan Pesto Clipboard saat Anda masuk"
           }
         },
         "it" : {
@@ -6852,6 +7500,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "स्टार्टअप"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mulai"
           }
         },
         "it" : {
@@ -6943,6 +7597,12 @@
             "value" : "संग्रहण"
           }
         },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Penyimpanan"
+          }
+        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
@@ -7029,6 +7689,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "टेक्स्ट"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Teks"
           }
         },
         "it" : {
@@ -7119,6 +7785,12 @@
             "value" : "पारदर्शी पृष्ठभूमि"
           }
         },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Latar belakang transparan"
+          }
+        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
@@ -7163,7 +7835,16 @@
         }
       }
     },
-    "Try restarting the app. If the problem persists, your clipboard data may need to be reset." : {},
+    "Try restarting the app. If the problem persists, your clipboard data may need to be reset." : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Coba mulai ulang aplikasi. Jika masalah berlanjut, data papan klip Anda mungkin perlu direset."
+          }
+        }
+      }
+    },
     "Use a glass effect for the clipboard panel" : {
       "localizations" : {
         "ca" : {
@@ -7206,6 +7887,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "क्लिपबोर्ड पैनल के लिए ग्लास इफ़ेक्ट उपयोग करें"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gunakan efek kaca untuk panel papan klip"
           }
         },
         "it" : {
@@ -7296,6 +7983,12 @@
             "value" : "Pesto Clipboard में आपका स्वागत है"
           }
         },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Selamat Datang di Pesto Clipboard"
+          }
+        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
@@ -7340,7 +8033,16 @@
         }
       }
     },
-    "When enabled, items copied from 1Password, Bitwarden, LastPass, and other password managers will not be saved." : {},
+    "When enabled, items copied from 1Password, Bitwarden, LastPass, and other password managers will not be saved." : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Jika diaktifkan, item yang disalin dari 1Password, Bitwarden, LastPass, dan pengelola kata sandi lainnya tidak akan disimpan."
+          }
+        }
+      }
+    },
     "When enabled, items copied on other Macs or iOS devices via Universal Clipboard will not be saved." : {
       "localizations" : {
         "ca" : {
@@ -7383,6 +8085,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "सक्षम होने पर, यूनिवर्सल क्लिपबोर्ड के माध्यम से अन्य Macs या iOS उपकरणों पर कॉपी किए गए आइटम सहेजे नहीं जाएंगे।"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Jika diaktifkan, item yang disalin di Mac atau perangkat iOS lain melalui Universal Clipboard tidak akan disimpan."
           }
         },
         "it" : {
@@ -7473,6 +8181,12 @@
             "value" : "आपका क्लिपबोर्ड इतिहास, हमेशा आपकी उंगलियों पर।"
           }
         },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Riwayat papan klip Anda, selalu dalam jangkauan."
+          }
+        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
@@ -7559,6 +8273,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "आइटम"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "item"
           }
         },
         "it" : {
