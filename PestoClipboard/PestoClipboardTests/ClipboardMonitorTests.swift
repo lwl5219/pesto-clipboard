@@ -1,5 +1,6 @@
 import Testing
 import AppKit
+import CoreData
 @testable import Pesto_Clipboard
 
 // MARK: - Mock Implementation
@@ -502,6 +503,60 @@ struct ContentExtractionTests {
         #expect(pasteboard.string(forType: .string) == nil)
         #expect(pasteboard.data(forType: .png) == nil)
         #expect(pasteboard.data(forType: .rtf) == nil)
+    }
+}
+
+// MARK: - Pesto Self-Detection Tests
+
+@MainActor
+struct PestoSelfDetectionTests {
+
+    let persistenceController: PersistenceController
+    let context: NSManagedObjectContext
+
+    init() {
+        persistenceController = PersistenceController(inMemory: true)
+        context = persistenceController.container.viewContext
+    }
+
+    @Test func pestoPasteboardTypeHasCorrectIdentifier() {
+        #expect(ClipboardMonitor.pestoPasteboardType.rawValue == "com.pestoclipboard.source-marker")
+    }
+
+    @Test func pasteHelperAddsPestoMarker() {
+        let item = ClipboardItem.create(
+            in: context,
+            type: .text,
+            textContent: "Test text",
+            contentHash: "hash-marker-1"
+        )
+
+        let pasteboard = NSPasteboard(name: .init("test-marker-\(UUID().uuidString)"))
+        pasteboard.clearContents()
+
+        PasteHelper.writeToClipboard(item: item, pasteboard: pasteboard, asPlainText: false)
+
+        let types = pasteboard.types ?? []
+        #expect(types.contains(ClipboardMonitor.pestoPasteboardType))
+    }
+
+    @Test func pasteboardWithPestoMarkerIsDetectable() {
+        let pasteboard = NSPasteboard(name: .init("test-detect-\(UUID().uuidString)"))
+        pasteboard.clearContents()
+        pasteboard.setString("test", forType: .string)
+        pasteboard.setData(Data(), forType: ClipboardMonitor.pestoPasteboardType)
+
+        let types = pasteboard.types ?? []
+        #expect(types.contains(ClipboardMonitor.pestoPasteboardType))
+    }
+
+    @Test func externalPasteboardDoesNotHaveMarker() {
+        let pasteboard = NSPasteboard(name: .init("test-external-\(UUID().uuidString)"))
+        pasteboard.clearContents()
+        pasteboard.setString("external content", forType: .string)
+
+        let types = pasteboard.types ?? []
+        #expect(!types.contains(ClipboardMonitor.pestoPasteboardType))
     }
 }
 

@@ -40,6 +40,15 @@ struct PasteHelper {
                 pasteboard.writeObjects(urls as [NSURL])
             }
         }
+
+        // Add Pesto marker so ClipboardMonitor ignores this paste
+        addPestoMarker(to: pasteboard)
+    }
+
+    /// Adds the Pesto source marker to the pasteboard
+    /// This allows ClipboardMonitor to detect and ignore clipboard changes from Pesto itself
+    private static func addPestoMarker(to pasteboard: NSPasteboard) {
+        pasteboard.setData(Data(), forType: ClipboardMonitor.pestoPasteboardType)
     }
 
     /// Checks if a pasteboard contains RTF data

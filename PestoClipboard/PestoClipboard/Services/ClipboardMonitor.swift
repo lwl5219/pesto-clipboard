@@ -7,6 +7,9 @@ class ClipboardMonitor: ObservableObject {
     private static let logger = Logger(subsystem: Bundle.main.bundleIdentifier ?? "PestoClipboard", category: "ClipboardMonitor")
     static var shared: ClipboardMonitor?
 
+    /// Marker type used to identify clipboard content written by Pesto
+    static let pestoPasteboardType = NSPasteboard.PasteboardType("com.pestoclipboard.source-marker")
+
     private let historyManager: ClipboardHistoryManaging
     private var lastChangeCount: Int = 0
     private var timer: Timer?
@@ -73,6 +76,12 @@ class ClipboardMonitor: ObservableObject {
 
     private func extractAndStoreContent(from pasteboard: NSPasteboard) {
         let settings = SettingsManager.shared
+
+        // Ignore clipboard content from Pesto itself (prevents re-capturing pasted items)
+        if isFromPesto(pasteboard: pasteboard) {
+            Self.logger.debug("Ignored clipboard content from Pesto (self-detection)")
+            return
+        }
 
         // Ignore clipboard content from other devices (Universal Clipboard)
         if settings.ignoreRemoteClipboard && isFromRemoteDevice(pasteboard: pasteboard) {
@@ -153,6 +162,12 @@ class ClipboardMonitor: ObservableObject {
             }
         }
         return false
+    }
+
+    // MARK: - Self-Detection (Ignore Pesto's own pastes)
+
+    private func isFromPesto(pasteboard: NSPasteboard) -> Bool {
+        return pasteboard.types?.contains(Self.pestoPasteboardType) ?? false
     }
 
     // MARK: - Content Extraction
