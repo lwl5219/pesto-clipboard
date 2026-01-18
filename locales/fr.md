@@ -2,8 +2,8 @@
 
 Source language: English (en)
 Total strings: 109
-Translated: 86 (78%)
-Missing: 23
+Translated: 109 (100%)
+Missing: 0
 Stale: 0
 
 ---
@@ -15,22 +15,22 @@ Stale: 0
 | ✓ | %lld | %lld |
 | ✓ | %lld files | %lld fichiers |
 | ✓ | (%lld) | (%lld) |
-| ✗ | 1 day |  |
-| ✗ | 1 hour |  |
-| ✗ | 12 hours |  |
-| ✗ | 3 hours |  |
-| ✗ | 30 days |  |
-| ✗ | 7 days |  |
+| ✓ | 1 day | 1 jour |
+| ✓ | 1 hour | 1 heure |
+| ✓ | 12 hours | 12 heures |
+| ✓ | 3 hours | 3 heures |
+| ✓ | 30 days | 30 jours |
+| ✓ | 7 days | 7 jours |
 | ✓ | About Pesto Clipboard | À propos de Pesto Clipboard |
 | ✓ | Accessibility permission required | Autorisation d'accessibilité requise |
 | ✓ | Appearance | Apparence |
 | ✓ | Are you sure you want to clear your clipboard history? | Voulez-vous vraiment effacer l'historique du presse-papiers ? |
-| ✗ | Auto-Delete |  |
+| ✓ | Auto-Delete | Suppression automatique |
 | ✓ | Automatically start Pesto Clipboard when you log in | Démarrer Pesto Clipboard automatiquement à la connexion |
 | ✓ | Back | Retour |
 | ✓ | Behavior | Comportement |
 | ✓ | Cancel | Annuler |
-| ✗ | Capture |  |
+| ✓ | Capture | Capturer |
 | ✓ | Capture Types | Types de capture |
 | ✓ | Choose a keyboard shortcut to quickly open your clipboard history from anywhere. | Choisissez un raccourci clavier pour ouvrir rapidement l'historique du presse-papiers. |
 | ✓ | Choose what types of content to capture from the clipboard. | Choisissez les types de contenu à capturer depuis le presse-papiers. |
@@ -42,7 +42,7 @@ Stale: 0
 | ✓ | Click to open System Settings | Cliquez pour ouvrir les Réglages Système |
 | ✓ | Clipboard content from these applications will not be captured. | Le contenu du presse-papiers de ces applications ne sera pas capturé. |
 | ✓ | Configure how Pesto Clipboard behaves. | Configurez le comportement de Pesto Clipboard. |
-| ✗ | Content Types |  |
+| ✓ | Content Types | Types de contenu |
 | ✓ | Copy something to get started | Copiez quelque chose pour commencer |
 | ✓ | Copy to Clipboard | Copier dans le presse-papiers |
 | ✓ | Danger Zone | Zone de danger |
@@ -50,36 +50,36 @@ Stale: 0
 | ✓ | Default: Cmd + Shift + V | Par défaut : Cmd + Shift + V |
 | ✓ | Delete | Supprimer |
 | ✓ | Delete (⌫) | Supprimer (⌫) |
-| ✗ | Delete items after: |  |
+| ✓ | Delete items after: | Supprimer les éléments après : |
 | ✓ | Edit | Modifier |
 | ✓ | Edit Clipboard Item | Modifier l'élément du presse-papiers |
-| ✗ | Error |  |
-| ✗ | Failed to load clipboard history |  |
-| ✗ | Failed to save clipboard item |  |
-| ✗ | Failed to search clipboard history |  |
+| ✓ | Error | Erreur |
+| ✓ | Failed to load clipboard history | Échec du chargement de l'historique du presse-papiers |
+| ✓ | Failed to save clipboard item | Échec de l'enregistrement de l'élément du presse-papiers |
+| ✓ | Failed to search clipboard history | Échec de la recherche dans l'historique du presse-papiers |
 | ✓ | Files | Fichiers |
 | ✓ | General | Général |
 | ✓ | Get Started | Commencer |
 | ✓ | History | Historique |
 | ✓ | Ignore | Ignorer |
 | ✓ | Ignore clipboard from other devices | Ignorer le presse-papiers des autres appareils |
-| ✗ | Ignore password manager content |  |
+| ✓ | Ignore password manager content | Ignorer le contenu du gestionnaire de mots de passe |
 | ✓ | Ignored Applications | Applications ignorées |
 | ✓ | Image | Image |
 | ✓ | Images | Images |
 | ✓ | Immediately paste after selecting an item | Coller immédiatement après la sélection d'un élément |
 | ✓ | Keyboard Shortcut | Raccourci clavier |
 | ✓ | Launch at login | Lancer à la connexion |
-| ✗ | Limits |  |
+| ✓ | Limits | Limites |
 | ✓ | Maximum items: | Nombre maximum d'éléments : |
-| ✗ | Never |  |
+| ✓ | Never | Jamais |
 | ✓ | Next | Suivant |
 | ✓ | No clipboard history | Aucun historique du presse-papiers |
 | ✓ | No ignored applications | Aucune application ignorée |
 | ✓ | No items matching "%@" | Aucun élément correspondant à « %@ » |
 | ✓ | No results found | Aucun résultat trouvé |
 | ✓ | No starred items | Aucun favori |
-| ✗ | OK |  |
+| ✓ | OK | OK |
 | ✓ | Open Pesto Clipboard: | Ouvrir Pesto Clipboard : |
 | ✓ | Paste as Original | Coller comme original |
 | ✓ | Paste as Plaintext | Coller comme texte brut |
@@ -94,7 +94,7 @@ Stale: 0
 | ✓ | Quit | Quitter |
 | ✓ | Re-run the initial setup wizard to configure basic settings. | Relancez l'assistant de configuration pour configurer les paramètres de base. |
 | ✓ | Recently Used | Récemment utilisé |
-| ✗ | Reducing this limit will delete older items immediately. |  |
+| ✓ | Reducing this limit will delete older items immediately. | Réduire cette limite supprimera immédiatement les éléments plus anciens. |
 | ✓ | Resume capture | Reprendre la capture |
 | ✓ | Run Setup Wizard | Lancer l'assistant de configuration |
 | ✓ | Save | Enregistrer |
@@ -106,18 +106,18 @@ Stale: 0
 | ✓ | Show starred only | Afficher uniquement les favoris |
 | ✓ | Showing starred only | Affichage des favoris uniquement |
 | ✓ | Sort by: | Trier par : |
-| ✗ | Sources |  |
+| ✓ | Sources | Sources |
 | ✓ | Star items to keep them safe | Marquez les éléments en favoris pour les protéger |
-| ✗ | Starred items are never automatically deleted. |  |
+| ✓ | Starred items are never automatically deleted. | Les éléments favoris ne sont jamais supprimés automatiquement. |
 | ✓ | Start Pesto Clipboard when you log in | Démarrer Pesto Clipboard à la connexion |
 | ✓ | Startup | Démarrage |
 | ✓ | Storage | Stockage |
 | ✓ | Text | Texte |
 | ✓ | Transparent background | Arrière-plan transparent |
-| ✗ | Try restarting the app. If the problem persists, your clipboard data may need to be reset. |  |
+| ✓ | Try restarting the app. If the problem persists, your clipboard data may need to be reset. | Essayez de redémarrer l'application. Si le problème persiste, vos données du presse-papiers devront peut-être être réinitialisées. |
 | ✓ | Use a glass effect for the clipboard panel | Utiliser un effet de verre pour le panneau du presse-papiers |
 | ✓ | Welcome to Pesto Clipboard | Bienvenue dans Pesto Clipboard |
-| ✗ | When enabled, items copied from 1Password, Bitwarden, LastPass, and other password managers will not be saved. |  |
+| ✓ | When enabled, items copied from 1Password, Bitwarden, LastPass, and other password managers will not be saved. | Lorsque activé, les éléments copiés depuis 1Password, Bitwarden, LastPass et autres gestionnaires de mots de passe ne seront pas enregistrés. |
 | ✓ | When enabled, items copied on other Macs or iOS devices via Universal Clipboard will not be saved. | Lorsque activé, les éléments copiés sur d'autres Macs ou appareils iOS via le Presse-papiers universel ne seront pas enregistrés. |
 | ✓ | Your clipboard history, always at your fingertips. | Votre historique du presse-papiers, toujours à portée de main. |
 | ✓ | items | éléments |

@@ -2,8 +2,8 @@
 
 Source language: English (en)
 Total strings: 109
-Translated: 86 (78%)
-Missing: 23
+Translated: 109 (100%)
+Missing: 0
 Stale: 0
 
 ---
@@ -15,22 +15,22 @@ Stale: 0
 | ✓ | %lld | %lld |
 | ✓ | %lld files | %lld filer |
 | ✓ | (%lld) | (%lld) |
-| ✗ | 1 day |  |
-| ✗ | 1 hour |  |
-| ✗ | 12 hours |  |
-| ✗ | 3 hours |  |
-| ✗ | 30 days |  |
-| ✗ | 7 days |  |
+| ✓ | 1 day | 1 dag |
+| ✓ | 1 hour | 1 time |
+| ✓ | 12 hours | 12 timer |
+| ✓ | 3 hours | 3 timer |
+| ✓ | 30 days | 30 dage |
+| ✓ | 7 days | 7 dage |
 | ✓ | About Pesto Clipboard | Om Pesto Clipboard |
 | ✓ | Accessibility permission required | Tilgængelighedstilladelse kræves |
 | ✓ | Appearance | Udseende |
 | ✓ | Are you sure you want to clear your clipboard history? | Er du sikker på, at du vil rydde udklipsholderhistorikken? |
-| ✗ | Auto-Delete |  |
+| ✓ | Auto-Delete | Automatisk sletning |
 | ✓ | Automatically start Pesto Clipboard when you log in | Start Pesto Clipboard automatisk ved login |
 | ✓ | Back | Tilbage |
 | ✓ | Behavior | Adfærd |
 | ✓ | Cancel | Annuller |
-| ✗ | Capture |  |
+| ✓ | Capture | Optag |
 | ✓ | Capture Types | Optagelsestyper |
 | ✓ | Choose a keyboard shortcut to quickly open your clipboard history from anywhere. | Vælg en tastaturgenvej for hurtigt at åbne udklipsholderhistorikken. |
 | ✓ | Choose what types of content to capture from the clipboard. | Vælg hvilke indholdstyper der skal optages fra udklipsholderen. |
@@ -42,7 +42,7 @@ Stale: 0
 | ✓ | Click to open System Settings | Klik for at åbne Systemindstillinger |
 | ✓ | Clipboard content from these applications will not be captured. | Udklipsholderindhold fra disse apps vil ikke blive optaget. |
 | ✓ | Configure how Pesto Clipboard behaves. | Konfigurer hvordan Pesto Clipboard opfører sig. |
-| ✗ | Content Types |  |
+| ✓ | Content Types | Indholdstyper |
 | ✓ | Copy something to get started | Kopiér noget for at komme i gang |
 | ✓ | Copy to Clipboard | Kopiér til udklipsholder |
 | ✓ | Danger Zone | Farezone |
@@ -50,36 +50,36 @@ Stale: 0
 | ✓ | Default: Cmd + Shift + V | Standard: Cmd + Shift + V |
 | ✓ | Delete | Slet |
 | ✓ | Delete (⌫) | Slet (⌫) |
-| ✗ | Delete items after: |  |
+| ✓ | Delete items after: | Slet elementer efter: |
 | ✓ | Edit | Rediger |
 | ✓ | Edit Clipboard Item | Rediger udklipsholderpost |
-| ✗ | Error |  |
-| ✗ | Failed to load clipboard history |  |
-| ✗ | Failed to save clipboard item |  |
-| ✗ | Failed to search clipboard history |  |
+| ✓ | Error | Fejl |
+| ✓ | Failed to load clipboard history | Kunne ikke indlæse udklipsholderhistorik |
+| ✓ | Failed to save clipboard item | Kunne ikke gemme udklipsholderpost |
+| ✓ | Failed to search clipboard history | Kunne ikke søge i udklipsholderhistorik |
 | ✓ | Files | Filer |
 | ✓ | General | Generelt |
 | ✓ | Get Started | Kom i gang |
 | ✓ | History | Historik |
 | ✓ | Ignore | Ignorer |
 | ✓ | Ignore clipboard from other devices | Ignorer udklipsholder fra andre enheder |
-| ✗ | Ignore password manager content |  |
+| ✓ | Ignore password manager content | Ignorer indhold fra adgangskodeadministrator |
 | ✓ | Ignored Applications | Ignorerede apps |
 | ✓ | Image | Billede |
 | ✓ | Images | Billeder |
 | ✓ | Immediately paste after selecting an item | Indsæt straks efter valg af element |
 | ✓ | Keyboard Shortcut | Tastaturgenvej |
 | ✓ | Launch at login | Start ved login |
-| ✗ | Limits |  |
+| ✓ | Limits | Grænser |
 | ✓ | Maximum items: | Maksimalt antal elementer: |
-| ✗ | Never |  |
+| ✓ | Never | Aldrig |
 | ✓ | Next | Næste |
 | ✓ | No clipboard history | Ingen udklipsholderhistorik |
 | ✓ | No ignored applications | Ingen ignorerede apps |
 | ✓ | No items matching "%@" | Ingen elementer matcher "%@" |
 | ✓ | No results found | Ingen resultater fundet |
 | ✓ | No starred items | Ingen favoritter |
-| ✗ | OK |  |
+| ✓ | OK | OK |
 | ✓ | Open Pesto Clipboard: | Åbn Pesto Clipboard: |
 | ✓ | Paste as Original | Indsæt som original |
 | ✓ | Paste as Plaintext | Indsæt som almindelig tekst |
@@ -94,7 +94,7 @@ Stale: 0
 | ✓ | Quit | Afslut |
 | ✓ | Re-run the initial setup wizard to configure basic settings. | Kør opsætningsguiden igen for at konfigurere grundindstillinger. |
 | ✓ | Recently Used | Senest brugt |
-| ✗ | Reducing this limit will delete older items immediately. |  |
+| ✓ | Reducing this limit will delete older items immediately. | Reduktion af denne grænse vil slette ældre elementer med det samme. |
 | ✓ | Resume capture | Genoptag optagelse |
 | ✓ | Run Setup Wizard | Kør opsætningsguide |
 | ✓ | Save | Gem |
@@ -106,18 +106,18 @@ Stale: 0
 | ✓ | Show starred only | Vis kun favoritter |
 | ✓ | Showing starred only | Viser kun favoritter |
 | ✓ | Sort by: | Sortér efter: |
-| ✗ | Sources |  |
+| ✓ | Sources | Kilder |
 | ✓ | Star items to keep them safe | Markér elementer som favoritter for at beskytte dem |
-| ✗ | Starred items are never automatically deleted. |  |
+| ✓ | Starred items are never automatically deleted. | Favoritmarkerede elementer slettes aldrig automatisk. |
 | ✓ | Start Pesto Clipboard when you log in | Start Pesto Clipboard ved login |
 | ✓ | Startup | Opstart |
 | ✓ | Storage | Lagring |
 | ✓ | Text | Tekst |
 | ✓ | Transparent background | Gennemsigtig baggrund |
-| ✗ | Try restarting the app. If the problem persists, your clipboard data may need to be reset. |  |
+| ✓ | Try restarting the app. If the problem persists, your clipboard data may need to be reset. | Prøv at genstarte appen. Hvis problemet fortsætter, skal dine udklipsholderdata muligvis nulstilles. |
 | ✓ | Use a glass effect for the clipboard panel | Brug glaseffekt til udklipsholderpanelet |
 | ✓ | Welcome to Pesto Clipboard | Velkommen til Pesto Clipboard |
-| ✗ | When enabled, items copied from 1Password, Bitwarden, LastPass, and other password managers will not be saved. |  |
+| ✓ | When enabled, items copied from 1Password, Bitwarden, LastPass, and other password managers will not be saved. | Når aktiveret, vil elementer kopieret fra 1Password, Bitwarden, LastPass og andre adgangskodeadministratorer ikke blive gemt. |
 | ✓ | When enabled, items copied on other Macs or iOS devices via Universal Clipboard will not be saved. | Når aktiveret, vil elementer kopieret på andre Macs eller iOS-enheder via Universal Udklipsholder ikke blive gemt. |
 | ✓ | Your clipboard history, always at your fingertips. | Din udklipsholderhistorik, altid lige ved hånden. |
 | ✓ | items | elementer |
