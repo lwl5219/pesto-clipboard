@@ -394,4 +394,74 @@ struct ClipboardHistoryManagerTests {
         #expect(manager.items.count == 1)
         #expect(manager.items.first?.fileURLs?.count == 3)
     }
+
+    // MARK: - Auto-Delete Tests
+
+    @Test func deleteExpiredItemsRemovesOldUnpinnedItems() {
+        let manager = createManager()
+
+        // Add items
+        manager.addTextItem("Old item 1")
+        manager.addTextItem("Old item 2")
+        manager.addTextItem("Recent item")
+
+        // Manually set the createdAt date for "old" items to be older than 1 hour
+        let oldDate = Date().addingTimeInterval(-7200) // 2 hours ago
+        if let oldItem1 = manager.items.first(where: { $0.textContent == "Old item 1" }) {
+            oldItem1.createdAt = oldDate
+        }
+        if let oldItem2 = manager.items.first(where: { $0.textContent == "Old item 2" }) {
+            oldItem2.createdAt = oldDate
+        }
+        try? manager.viewContext.save()
+
+        // Delete items older than 1 hour
+        manager.deleteExpiredItems(olderThan: 3600)
+
+        // Only the recent item should remain
+        #expect(manager.items.count == 1)
+        #expect(manager.items.first?.textContent == "Recent item")
+    }
+
+    @Test func deleteExpiredItemsKeepsPinnedItems() {
+        let manager = createManager()
+
+        // Add items
+        manager.addTextItem("Pinned old item")
+        manager.addTextItem("Unpinned old item")
+
+        // Pin the first item
+        if let pinnedItem = manager.items.first(where: { $0.textContent == "Pinned old item" }) {
+            manager.togglePin(pinnedItem)
+        }
+
+        // Set both to be old
+        let oldDate = Date().addingTimeInterval(-7200) // 2 hours ago
+        for item in manager.items {
+            item.createdAt = oldDate
+        }
+        try? manager.viewContext.save()
+
+        // Delete items older than 1 hour
+        manager.deleteExpiredItems(olderThan: 3600)
+
+        // Only the pinned item should remain
+        #expect(manager.items.count == 1)
+        #expect(manager.items.first?.textContent == "Pinned old item")
+        #expect(manager.items.first?.isPinned == true)
+    }
+
+    @Test func deleteExpiredItemsDoesNothingWhenNoExpiredItems() {
+        let manager = createManager()
+
+        // Add recent items
+        manager.addTextItem("Recent item 1")
+        manager.addTextItem("Recent item 2")
+        manager.addTextItem("Recent item 3")
+
+        // All items are recent (just created), so nothing should be deleted
+        manager.deleteExpiredItems(olderThan: 3600)
+
+        #expect(manager.items.count == 3)
+    }
 }

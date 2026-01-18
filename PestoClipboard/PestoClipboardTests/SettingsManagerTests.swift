@@ -68,6 +68,41 @@ struct SettingsManagerTests {
     @Test func historyLimitStep() {
         #expect(Constants.historyLimitStep == 50)
     }
+
+    // MARK: - AutoDeleteInterval Enum Tests
+
+    @Test func autoDeleteIntervalTimeIntervals() {
+        #expect(SettingsManager.AutoDeleteInterval.never.timeInterval == nil)
+        #expect(SettingsManager.AutoDeleteInterval.oneHour.timeInterval == 3600.0)
+        #expect(SettingsManager.AutoDeleteInterval.threeHours.timeInterval == 10800.0)
+        #expect(SettingsManager.AutoDeleteInterval.twelveHours.timeInterval == 43200.0)
+        #expect(SettingsManager.AutoDeleteInterval.oneDay.timeInterval == 86400.0)
+        #expect(SettingsManager.AutoDeleteInterval.sevenDays.timeInterval == 604800.0)
+        #expect(SettingsManager.AutoDeleteInterval.thirtyDays.timeInterval == 2592000.0)
+    }
+
+    @Test func autoDeleteIntervalAllCases() {
+        let allCases = SettingsManager.AutoDeleteInterval.allCases
+        #expect(allCases.count == 7)
+        #expect(allCases.contains(.never))
+        #expect(allCases.contains(.oneHour))
+        #expect(allCases.contains(.threeHours))
+        #expect(allCases.contains(.twelveHours))
+        #expect(allCases.contains(.oneDay))
+        #expect(allCases.contains(.sevenDays))
+        #expect(allCases.contains(.thirtyDays))
+    }
+
+    @Test func autoDeleteIntervalFromRawValue() {
+        #expect(SettingsManager.AutoDeleteInterval(rawValue: "never") == .never)
+        #expect(SettingsManager.AutoDeleteInterval(rawValue: "oneHour") == .oneHour)
+        #expect(SettingsManager.AutoDeleteInterval(rawValue: "threeHours") == .threeHours)
+        #expect(SettingsManager.AutoDeleteInterval(rawValue: "twelveHours") == .twelveHours)
+        #expect(SettingsManager.AutoDeleteInterval(rawValue: "oneDay") == .oneDay)
+        #expect(SettingsManager.AutoDeleteInterval(rawValue: "sevenDays") == .sevenDays)
+        #expect(SettingsManager.AutoDeleteInterval(rawValue: "thirtyDays") == .thirtyDays)
+        #expect(SettingsManager.AutoDeleteInterval(rawValue: "Invalid") == nil)
+    }
 }
 
 // MARK: - Constants Tests

@@ -26,6 +26,9 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         // Start monitoring clipboard
         clipboardMonitor?.startMonitoring()
 
+        // Start auto-delete timer
+        historyManager?.startAutoDeleteTimer()
+
         // Register global hotkey
         setupGlobalHotkey()
 
@@ -41,6 +44,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
     func applicationWillTerminate(_ notification: Notification) {
         clipboardMonitor?.stopMonitoring()
+        historyManager?.stopAutoDeleteTimer()
     }
 
     private func setupGlobalHotkey() {

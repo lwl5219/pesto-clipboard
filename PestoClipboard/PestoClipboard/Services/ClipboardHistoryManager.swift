@@ -30,6 +30,7 @@ class ClipboardHistoryManager: ObservableObject, ClipboardHistoryManaging {
     private let persistenceController: PersistenceController
     private let maxItemsOverride: Int?
     private var cancellables = Set<AnyCancellable>()
+    private var autoDeleteTimer: Timer?
 
     private var maxItems: Int {
         maxItemsOverride ?? SettingsManager.shared.historyLimit
@@ -253,5 +254,59 @@ class ClipboardHistoryManager: ObservableObject, ClipboardHistoryManaging {
     private func computeHash(for data: Data) -> String {
         let digest = SHA256.hash(data: data)
         return digest.map { String(format: "%02x", $0) }.joined()
+    }
+
+    // MARK: - Auto-Delete
+
+    func startAutoDeleteTimer() {
+        stopAutoDeleteTimer()
+
+        // Subscribe to setting changes to trigger immediate cleanup
+        SettingsManager.shared.$autoDeleteInterval
+            .dropFirst()
+            .sink { [weak self] _ in
+                self?.performAutoDeleteIfEnabled()
+            }
+            .store(in: &cancellables)
+
+        // Run immediately on start
+        performAutoDeleteIfEnabled()
+
+        // Schedule timer to run every 5 minutes
+        autoDeleteTimer = Timer.scheduledTimer(withTimeInterval: 300, repeats: true) { [weak self] _ in
+            self?.performAutoDeleteIfEnabled()
+        }
+    }
+
+    func stopAutoDeleteTimer() {
+        autoDeleteTimer?.invalidate()
+        autoDeleteTimer = nil
+    }
+
+    private func performAutoDeleteIfEnabled() {
+        guard let interval = SettingsManager.shared.autoDeleteInterval.timeInterval else {
+            return
+        }
+        deleteExpiredItems(olderThan: interval)
+    }
+
+    func deleteExpiredItems(olderThan interval: TimeInterval) {
+        let cutoffDate = Date().addingTimeInterval(-interval)
+
+        let request = ClipboardItem.fetchRequest() as NSFetchRequest<ClipboardItem>
+        request.predicate = NSPredicate(format: "isPinned == NO AND createdAt < %@", cutoffDate as NSDate)
+
+        do {
+            let expiredItems = try viewContext.fetch(request)
+            for item in expiredItems {
+                viewContext.delete(item)
+            }
+            if !expiredItems.isEmpty {
+                try viewContext.save()
+                fetchItems()
+            }
+        } catch {
+            print("Failed to delete expired items: \(error)")
+        }
     }
 }

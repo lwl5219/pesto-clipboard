@@ -352,6 +352,30 @@ struct HistorySettingsView: View {
                     }
                 }
 
+                // Auto-Delete Section
+                SettingsSection(title: "Auto-Delete") {
+                    VStack(alignment: .leading, spacing: 8) {
+                        HStack {
+                            Text("Delete items after:")
+                                .frame(width: 120, alignment: .leading)
+
+                            Picker("", selection: $settings.autoDeleteInterval) {
+                                ForEach(SettingsManager.AutoDeleteInterval.allCases, id: \.self) { interval in
+                                    Text(interval.localizedName).tag(interval)
+                                }
+                            }
+                            .labelsHidden()
+                            .frame(width: 180)
+
+                            Spacer()
+                        }
+
+                        Text("Starred items are never automatically deleted.")
+                            .font(.caption)
+                            .foregroundStyle(.tertiary)
+                    }
+                }
+
                 // Danger Zone
                 SettingsSection(title: "Danger Zone") {
                     VStack(alignment: .leading, spacing: 12) {

@@ -64,6 +64,10 @@ class SettingsManager: ObservableObject {
         didSet { UserDefaults.standard.set(sortOrder.rawValue, forKey: "sortOrder") }
     }
 
+    @Published var autoDeleteInterval: AutoDeleteInterval {
+        didSet { UserDefaults.standard.set(autoDeleteInterval.rawValue, forKey: "autoDeleteInterval") }
+    }
+
     // MARK: - Ignore Settings
 
     @Published var ignoredApps: [String] {
@@ -88,6 +92,42 @@ class SettingsManager: ObservableObject {
         }
     }
 
+    // MARK: - Auto-Delete Interval
+
+    enum AutoDeleteInterval: String, CaseIterable {
+        case never
+        case oneHour
+        case threeHours
+        case twelveHours
+        case oneDay
+        case sevenDays
+        case thirtyDays
+
+        var timeInterval: TimeInterval? {
+            switch self {
+            case .never: return nil
+            case .oneHour: return 3600
+            case .threeHours: return 3600 * 3
+            case .twelveHours: return 3600 * 12
+            case .oneDay: return 3600 * 24
+            case .sevenDays: return 3600 * 24 * 7
+            case .thirtyDays: return 3600 * 24 * 30
+            }
+        }
+
+        var localizedName: String {
+            switch self {
+            case .never: return String(localized: "Never")
+            case .oneHour: return String(localized: "1 hour")
+            case .threeHours: return String(localized: "3 hours")
+            case .twelveHours: return String(localized: "12 hours")
+            case .oneDay: return String(localized: "1 day")
+            case .sevenDays: return String(localized: "7 days")
+            case .thirtyDays: return String(localized: "30 days")
+            }
+        }
+    }
+
     // MARK: - Init
 
     private init() {
@@ -107,6 +147,9 @@ class SettingsManager: ObservableObject {
 
         let sortRaw = UserDefaults.standard.string(forKey: "sortOrder") ?? SortOrder.recentlyUsed.rawValue
         self.sortOrder = SortOrder(rawValue: sortRaw) ?? .recentlyUsed
+
+        let autoDeleteRaw = UserDefaults.standard.string(forKey: "autoDeleteInterval") ?? AutoDeleteInterval.never.rawValue
+        self.autoDeleteInterval = AutoDeleteInterval(rawValue: autoDeleteRaw) ?? .never
     }
 
     // MARK: - Actions
