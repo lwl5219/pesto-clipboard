@@ -1,97 +1,7 @@
 {
   "sourceLanguage" : "en",
   "strings" : {
-    "" : {
-
-    },
-    "(%lld)" : {
-      "localizations" : {
-        "ca" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "(%lld)"
-          }
-        },
-        "da" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "(%lld)"
-          }
-        },
-        "de" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "(%lld)"
-          }
-        },
-        "en-GB" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "(%lld)"
-          }
-        },
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "(%lld)"
-          }
-        },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "(%lld)"
-          }
-        },
-        "hi" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "(%lld)"
-          }
-        },
-        "it" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "(%lld)"
-          }
-        },
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "(%lld)"
-          }
-        },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "(%lld)"
-          }
-        },
-        "nl" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "(%lld)"
-          }
-        },
-        "ru" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "(%lld)"
-          }
-        },
-        "sv" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "(%lld)"
-          }
-        },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "(%lld)"
-          }
-        }
-      }
-    },
+    "" : {},
     "%lld" : {
       "localizations" : {
         "ca" : {
@@ -268,24 +178,109 @@
         }
       }
     },
-    "1 day" : {
-
+    "(%lld)" : {
+      "localizations" : {
+        "ca" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "(%lld)"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "(%lld)"
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "(%lld)"
+          }
+        },
+        "en-GB" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "(%lld)"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "(%lld)"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "(%lld)"
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "(%lld)"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "(%lld)"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "(%lld)"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "(%lld)"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "(%lld)"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "(%lld)"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "(%lld)"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "(%lld)"
+          }
+        }
+      }
     },
+    "1 day" : {},
     "1 hour" : {
-
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "1 Stunde"
+          }
+        }
+      }
     },
-    "3 hours" : {
-
-    },
-    "7 days" : {
-
-    },
-    "12 hours" : {
-
-    },
-    "30 days" : {
-
-    },
+    "12 hours" : {},
+    "3 hours" : {},
+    "30 days" : {},
+    "7 days" : {},
     "About Pesto Clipboard" : {
       "localizations" : {
         "ca" : {
@@ -638,9 +633,7 @@
         }
       }
     },
-    "Auto-Delete" : {
-
-    },
+    "Auto-Delete" : {},
     "Automatically start Pesto Clipboard when you log in" : {
       "localizations" : {
         "ca" : {
@@ -993,9 +986,7 @@
         }
       }
     },
-    "Capture" : {
-
-    },
+    "Capture" : {},
     "Capture Types" : {
       "extractionState" : "stale",
       "localizations" : {
@@ -1965,9 +1956,7 @@
         }
       }
     },
-    "Content Types" : {
-
-    },
+    "Content Types" : {},
     "Copy something to get started" : {
       "localizations" : {
         "ca" : {
@@ -2584,9 +2573,7 @@
         }
       }
     },
-    "Delete items after:" : {
-
-    },
+    "Delete items after:" : {},
     "Edit" : {
       "localizations" : {
         "ca" : {
@@ -2763,18 +2750,10 @@
         }
       }
     },
-    "Error" : {
-
-    },
-    "Failed to load clipboard history" : {
-
-    },
-    "Failed to save clipboard item" : {
-
-    },
-    "Failed to search clipboard history" : {
-
-    },
+    "Error" : {},
+    "Failed to load clipboard history" : {},
+    "Failed to save clipboard item" : {},
+    "Failed to search clipboard history" : {},
     "Files" : {
       "localizations" : {
         "ca" : {
@@ -3304,9 +3283,7 @@
         }
       }
     },
-    "Ignore password manager content" : {
-
-    },
+    "Ignore password manager content" : {},
     "Ignored Applications" : {
       "localizations" : {
         "ca" : {
@@ -3659,94 +3636,6 @@
         }
       }
     },
-    "items" : {
-      "localizations" : {
-        "ca" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "elements"
-          }
-        },
-        "da" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "elementer"
-          }
-        },
-        "de" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Elemente"
-          }
-        },
-        "en-GB" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "items"
-          }
-        },
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "elementos"
-          }
-        },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "éléments"
-          }
-        },
-        "hi" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "आइटम"
-          }
-        },
-        "it" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "elementi"
-          }
-        },
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "項目"
-          }
-        },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "항목"
-          }
-        },
-        "nl" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "items"
-          }
-        },
-        "ru" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "элементов"
-          }
-        },
-        "sv" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "objekt"
-          }
-        },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "项"
-          }
-        }
-      }
-    },
     "Keyboard Shortcut" : {
       "localizations" : {
         "ca" : {
@@ -3923,9 +3812,7 @@
         }
       }
     },
-    "Limits" : {
-
-    },
+    "Limits" : {},
     "Maximum items:" : {
       "localizations" : {
         "ca" : {
@@ -4014,9 +3901,7 @@
         }
       }
     },
-    "Never" : {
-
-    },
+    "Never" : {},
     "Next" : {
       "localizations" : {
         "ca" : {
@@ -4545,9 +4430,7 @@
         }
       }
     },
-    "OK" : {
-
-    },
+    "OK" : {},
     "Open Pesto Clipboard:" : {
       "localizations" : {
         "ca" : {
@@ -5780,9 +5663,7 @@
         }
       }
     },
-    "Reducing this limit will delete older items immediately." : {
-
-    },
+    "Reducing this limit will delete older items immediately." : {},
     "Resume capture" : {
       "localizations" : {
         "ca" : {
@@ -6751,9 +6632,7 @@
         }
       }
     },
-    "Sources" : {
-
-    },
+    "Sources" : {},
     "Star items to keep them safe" : {
       "localizations" : {
         "ca" : {
@@ -6842,9 +6721,7 @@
         }
       }
     },
-    "Starred items are never automatically deleted." : {
-
-    },
+    "Starred items are never automatically deleted." : {},
     "Start Pesto Clipboard when you log in" : {
       "localizations" : {
         "ca" : {
@@ -7286,9 +7163,7 @@
         }
       }
     },
-    "Try restarting the app. If the problem persists, your clipboard data may need to be reset." : {
-
-    },
+    "Try restarting the app. If the problem persists, your clipboard data may need to be reset." : {},
     "Use a glass effect for the clipboard panel" : {
       "localizations" : {
         "ca" : {
@@ -7465,9 +7340,7 @@
         }
       }
     },
-    "When enabled, items copied from 1Password, Bitwarden, LastPass, and other password managers will not be saved." : {
-
-    },
+    "When enabled, items copied from 1Password, Bitwarden, LastPass, and other password managers will not be saved." : {},
     "When enabled, items copied on other Macs or iOS devices via Universal Clipboard will not be saved." : {
       "localizations" : {
         "ca" : {
@@ -7640,6 +7513,94 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "您的剪贴板历史记录，触手可及。"
+          }
+        }
+      }
+    },
+    "items" : {
+      "localizations" : {
+        "ca" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "elements"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "elementer"
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Elemente"
+          }
+        },
+        "en-GB" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "items"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "elementos"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "éléments"
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "आइटम"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "elementi"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "項目"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "항목"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "items"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "элементов"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "objekt"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "项"
           }
         }
       }

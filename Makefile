@@ -1,4 +1,4 @@
-.PHONY: build build-debug test clean install dmg bump-version
+.PHONY: build build-debug test clean install dmg bump-version locales-export locales-import locales-status
 
 PROJECT_NAME = PestoClipboard
 APP_NAME = Pesto Clipboard
@@ -68,3 +68,13 @@ endif
 	@echo "Next steps:"
 	@echo "  git add -A && git commit -m 'Bump version to $(V)'"
 	@echo "  git tag v$(V) && git push origin main --tags"
+
+# Localization management
+locales-export:
+	@./scripts/xcstrings.py export
+
+locales-import:
+	@./scripts/xcstrings.py import
+
+locales-status:
+	@./scripts/xcstrings.py status
