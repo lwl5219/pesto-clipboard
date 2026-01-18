@@ -268,6 +268,24 @@
         }
       }
     },
+    "1 day" : {
+
+    },
+    "1 hour" : {
+
+    },
+    "3 hours" : {
+
+    },
+    "7 days" : {
+
+    },
+    "12 hours" : {
+
+    },
+    "30 days" : {
+
+    },
     "About Pesto Clipboard" : {
       "localizations" : {
         "ca" : {
@@ -619,6 +637,9 @@
           }
         }
       }
+    },
+    "Auto-Delete" : {
+
     },
     "Automatically start Pesto Clipboard when you log in" : {
       "localizations" : {
@@ -2563,6 +2584,9 @@
         }
       }
     },
+    "Delete items after:" : {
+
+    },
     "Edit" : {
       "localizations" : {
         "ca" : {
@@ -3280,6 +3304,9 @@
         }
       }
     },
+    "Ignore password manager content" : {
+
+    },
     "Ignored Applications" : {
       "localizations" : {
         "ca" : {
@@ -3987,6 +4014,9 @@
         }
       }
     },
+    "Never" : {
+
+    },
     "Next" : {
       "localizations" : {
         "ca" : {
@@ -4605,9 +4635,6 @@
           }
         }
       }
-    },
-    "Password managers like 1Password, Bitwarden, and LastPass are automatically ignored for security." : {
-
     },
     "Paste as Original" : {
       "localizations" : {
@@ -6815,6 +6842,9 @@
         }
       }
     },
+    "Starred items are never automatically deleted." : {
+
+    },
     "Start Pesto Clipboard when you log in" : {
       "localizations" : {
         "ca" : {
@@ -7434,6 +7464,9 @@
           }
         }
       }
+    },
+    "When enabled, items copied from 1Password, Bitwarden, LastPass, and other password managers will not be saved." : {
+
     },
     "When enabled, items copied on other Macs or iOS devices via Universal Clipboard will not be saved." : {
       "localizations" : {

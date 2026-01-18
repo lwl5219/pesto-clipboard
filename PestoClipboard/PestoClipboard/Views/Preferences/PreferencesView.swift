@@ -176,6 +176,23 @@ struct CaptureSettingsView: View {
                         Text("When enabled, items copied on other Macs or iOS devices via Universal Clipboard will not be saved.")
                             .font(.caption)
                             .foregroundStyle(.tertiary)
+
+                        Divider()
+                            .padding(.vertical, 4)
+
+                        Toggle(isOn: $settings.ignorePasswordManagers) {
+                            HStack(spacing: 8) {
+                                Image(systemName: "lock.shield")
+                                    .foregroundStyle(.secondary)
+                                    .frame(width: 20)
+                                Text("Ignore password manager content")
+                            }
+                        }
+                        .toggleStyle(.checkbox)
+
+                        Text("When enabled, items copied from 1Password, Bitwarden, LastPass, and other password managers will not be saved.")
+                            .font(.caption)
+                            .foregroundStyle(.tertiary)
                     }
                 }
 
@@ -242,16 +259,6 @@ struct CaptureSettingsView: View {
 
                             Spacer()
                         }
-
-                        // Note about automatic password manager detection
-                        HStack(alignment: .top, spacing: 8) {
-                            Image(systemName: "lock.shield")
-                                .foregroundStyle(.secondary)
-                            Text("Password managers like 1Password, Bitwarden, and LastPass are automatically ignored for security.")
-                                .font(.caption)
-                                .foregroundStyle(.tertiary)
-                        }
-                        .padding(.top, 4)
                     }
                 }
 

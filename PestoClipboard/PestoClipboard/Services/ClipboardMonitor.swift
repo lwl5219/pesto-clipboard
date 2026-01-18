@@ -89,8 +89,8 @@ class ClipboardMonitor: ObservableObject {
             return
         }
 
-        // Always ignore password manager content (security)
-        if isFromPasswordManager(pasteboard: pasteboard) {
+        // Ignore password manager content (security) - configurable
+        if settings.ignorePasswordManagers && isFromPasswordManager(pasteboard: pasteboard) {
             Self.logger.debug("Ignored password manager content")
             return
         }

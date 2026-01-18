@@ -78,6 +78,10 @@ class SettingsManager: ObservableObject {
         didSet { UserDefaults.standard.set(ignoreRemoteClipboard, forKey: "ignoreRemoteClipboard") }
     }
 
+    @Published var ignorePasswordManagers: Bool {
+        didSet { UserDefaults.standard.set(ignorePasswordManagers, forKey: "ignorePasswordManagers") }
+    }
+
     // MARK: - Sort Order
 
     enum SortOrder: String, CaseIterable {
@@ -144,6 +148,7 @@ class SettingsManager: ObservableObject {
         self.historyLimit = storedLimit.clamped(to: Constants.historyLimitRange)
         self.ignoredApps = UserDefaults.standard.stringArray(forKey: "ignoredApps") ?? []
         self.ignoreRemoteClipboard = UserDefaults.standard.object(forKey: "ignoreRemoteClipboard") as? Bool ?? true
+        self.ignorePasswordManagers = UserDefaults.standard.object(forKey: "ignorePasswordManagers") as? Bool ?? true
 
         let sortRaw = UserDefaults.standard.string(forKey: "sortOrder") ?? SortOrder.recentlyUsed.rawValue
         self.sortOrder = SortOrder(rawValue: sortRaw) ?? .recentlyUsed

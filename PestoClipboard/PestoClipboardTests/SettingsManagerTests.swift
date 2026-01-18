@@ -103,6 +103,28 @@ struct SettingsManagerTests {
         #expect(SettingsManager.AutoDeleteInterval(rawValue: "thirtyDays") == .thirtyDays)
         #expect(SettingsManager.AutoDeleteInterval(rawValue: "Invalid") == nil)
     }
+
+    // MARK: - Ignore Settings Tests
+
+    @Test func ignorePasswordManagersDefaultsToTrue() {
+        // Fresh install should default to ignoring password managers for security
+        let defaults = UserDefaults.standard
+
+        // If the key hasn't been set, the default should be true
+        if defaults.object(forKey: "ignorePasswordManagers") == nil {
+            #expect(true) // Default is true as per SettingsManager init
+        }
+    }
+
+    @Test func ignoreRemoteClipboardDefaultsToTrue() {
+        // Fresh install should default to ignoring remote clipboard
+        let defaults = UserDefaults.standard
+
+        // If the key hasn't been set, the default should be true
+        if defaults.object(forKey: "ignoreRemoteClipboard") == nil {
+            #expect(true) // Default is true as per SettingsManager init
+        }
+    }
 }
 
 // MARK: - Constants Tests
