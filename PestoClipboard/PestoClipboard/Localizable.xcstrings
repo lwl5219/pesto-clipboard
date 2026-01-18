@@ -286,6 +286,12 @@
     },
     "1 day" : {
       "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "1 día"
+          }
+        },
         "id" : {
           "stringUnit" : {
             "state" : "translated",
@@ -302,6 +308,12 @@
             "value" : "1 Stunde"
           }
         },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "1 hora"
+          }
+        },
         "id" : {
           "stringUnit" : {
             "state" : "translated",
@@ -312,6 +324,12 @@
     },
     "12 hours" : {
       "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "12 horas"
+          }
+        },
         "id" : {
           "stringUnit" : {
             "state" : "translated",
@@ -322,6 +340,12 @@
     },
     "3 hours" : {
       "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "3 horas"
+          }
+        },
         "id" : {
           "stringUnit" : {
             "state" : "translated",
@@ -332,6 +356,12 @@
     },
     "30 days" : {
       "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "30 días"
+          }
+        },
         "id" : {
           "stringUnit" : {
             "state" : "translated",
@@ -342,6 +372,12 @@
     },
     "7 days" : {
       "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "7 días"
+          }
+        },
         "id" : {
           "stringUnit" : {
             "state" : "translated",
@@ -728,6 +764,12 @@
     },
     "Auto-Delete" : {
       "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Eliminación automática"
+          }
+        },
         "id" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1114,6 +1156,12 @@
     },
     "Capture" : {
       "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Capturar"
+          }
+        },
         "id" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2159,6 +2207,12 @@
     },
     "Content Types" : {
       "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tipos de contenido"
+          }
+        },
         "id" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2827,6 +2881,12 @@
     },
     "Delete items after:" : {
       "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Eliminar elementos después de:"
+          }
+        },
         "id" : {
           "stringUnit" : {
             "state" : "translated",
@@ -3025,6 +3085,12 @@
     },
     "Error" : {
       "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Error"
+          }
+        },
         "id" : {
           "stringUnit" : {
             "state" : "translated",
@@ -3035,6 +3101,12 @@
     },
     "Failed to load clipboard history" : {
       "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Error al cargar el historial del portapapeles"
+          }
+        },
         "id" : {
           "stringUnit" : {
             "state" : "translated",
@@ -3045,6 +3117,12 @@
     },
     "Failed to save clipboard item" : {
       "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Error al guardar el elemento del portapapeles"
+          }
+        },
         "id" : {
           "stringUnit" : {
             "state" : "translated",
@@ -3055,6 +3133,12 @@
     },
     "Failed to search clipboard history" : {
       "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Error al buscar en el historial del portapapeles"
+          }
+        },
         "id" : {
           "stringUnit" : {
             "state" : "translated",
@@ -3630,6 +3714,12 @@
     },
     "Ignore password manager content" : {
       "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ignorar contenido del gestor de contraseñas"
+          }
+        },
         "id" : {
           "stringUnit" : {
             "state" : "translated",
@@ -4204,6 +4294,12 @@
     },
     "Limits" : {
       "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Límites"
+          }
+        },
         "id" : {
           "stringUnit" : {
             "state" : "translated",
@@ -4308,6 +4404,12 @@
     },
     "Never" : {
       "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nunca"
+          }
+        },
         "id" : {
           "stringUnit" : {
             "state" : "translated",
@@ -4882,6 +4984,12 @@
     },
     "OK" : {
       "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aceptar"
+          }
+        },
         "id" : {
           "stringUnit" : {
             "state" : "translated",
@@ -6208,6 +6316,12 @@
     },
     "Reducing this limit will delete older items immediately." : {
       "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Reducir este límite eliminará los elementos más antiguos inmediatamente."
+          }
+        },
         "id" : {
           "stringUnit" : {
             "state" : "translated",
@@ -7252,6 +7366,12 @@
     },
     "Sources" : {
       "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fuentes"
+          }
+        },
         "id" : {
           "stringUnit" : {
             "state" : "translated",
@@ -7356,6 +7476,12 @@
     },
     "Starred items are never automatically deleted." : {
       "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Los elementos destacados nunca se eliminan automáticamente."
+          }
+        },
         "id" : {
           "stringUnit" : {
             "state" : "translated",
@@ -7837,6 +7963,12 @@
     },
     "Try restarting the app. If the problem persists, your clipboard data may need to be reset." : {
       "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Intenta reiniciar la aplicación. Si el problema persiste, es posible que necesites restablecer los datos del portapapeles."
+          }
+        },
         "id" : {
           "stringUnit" : {
             "state" : "translated",
@@ -8035,6 +8167,12 @@
     },
     "When enabled, items copied from 1Password, Bitwarden, LastPass, and other password managers will not be saved." : {
       "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cuando está habilitado, los elementos copiados de 1Password, Bitwarden, LastPass y otros gestores de contraseñas no se guardarán."
+          }
+        },
         "id" : {
           "stringUnit" : {
             "state" : "translated",
