@@ -170,8 +170,8 @@ struct HistoryManagerToUIIntegrationTests {
 
         viewModel.searchText = "apple"
 
-        // Wait for debounce to complete
-        try await Task.sleep(nanoseconds: 100_000_000) // 100ms
+        // Wait for debounce to complete (50ms debounce + extra time for CI runners)
+        try await Task.sleep(nanoseconds: 500_000_000) // 500ms
 
         #expect(viewModel.filteredItems.count == 1)
         #expect(viewModel.filteredItems.first?.textContent == "Apple")
