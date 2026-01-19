@@ -1,9 +1,9 @@
 # Spanish (es) Translations
 
 Source language: English (en)
-Total strings: 109
-Translated: 109 (100%)
-Missing: 0
+Total strings: 114
+Translated: 109 (95%)
+Missing: 5
 Stale: 0
 
 ---
@@ -23,6 +23,7 @@ Stale: 0
 | ✓ | 7 days | 7 días |
 | ✓ | About Pesto Clipboard | Acerca de Pesto Clipboard |
 | ✓ | Accessibility permission required | Se requiere permiso de accesibilidad |
+| ✓ | Advanced | Avanzado |
 | ✓ | Appearance | Apariencia |
 | ✓ | Are you sure you want to clear your clipboard history? | ¿Estás seguro de que quieres borrar el historial del portapapeles? |
 | ✓ | Auto-Delete | Eliminación automática |
@@ -60,6 +61,7 @@ Stale: 0
 | ✓ | Files | Archivos |
 | ✓ | General | General |
 | ✓ | Get Started | Comenzar |
+| ✓ | Hide menu bar icon | Ocultar icono de la barra de menús |
 | ✓ | History | Historial |
 | ✓ | Ignore | Ignorar |
 | ✓ | Ignore clipboard from other devices | Ignorar portapapeles de otros dispositivos |
@@ -71,7 +73,9 @@ Stale: 0
 | ✓ | Keyboard Shortcut | Atajo de teclado |
 | ✓ | Launch at login | Iniciar al iniciar sesión |
 | ✓ | Limits | Límites |
+| ✓ | Make sure you remember your keyboard shortcut! | ¡Asegúrate de recordar tu atajo de teclado! |
 | ✓ | Maximum items: | Máximo de elementos: |
+| ✓ | Menu Bar | Barra de menús |
 | ✓ | Never | Nunca |
 | ✓ | Next | Siguiente |
 | ✓ | No clipboard history | Sin historial del portapapeles |
@@ -80,6 +84,7 @@ Stale: 0
 | ✓ | No results found | No se encontraron resultados |
 | ✓ | No starred items | Sin elementos destacados |
 | ✓ | OK | Aceptar |
+| ✓ | Only access Pesto Clipboard via keyboard shortcut | Solo acceder a Pesto Clipboard mediante atajo de teclado |
 | ✓ | Open Pesto Clipboard: | Abrir Pesto Clipboard: |
 | ✓ | Paste as Original | Pegar como original |
 | ✓ | Paste as Plaintext | Pegar como texto plano |

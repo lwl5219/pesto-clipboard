@@ -17,6 +17,7 @@ class StatusBarController {
         setupPanel()
         setupEventMonitor()
         setupEventSubscriptions()
+        setupSettingsSubscriptions()
     }
 
     private func setupEventSubscriptions() {
@@ -31,6 +32,19 @@ class StatusBarController {
             .receive(on: DispatchQueue.main)
             .sink { [weak self] in
                 self?.showPanel()
+            }
+            .store(in: &cancellables)
+    }
+
+    private func setupSettingsSubscriptions() {
+        // Apply initial state
+        statusItem.isVisible = !SettingsManager.shared.hideMenuBarIcon
+
+        // Subscribe to changes
+        SettingsManager.shared.$hideMenuBarIcon
+            .receive(on: DispatchQueue.main)
+            .sink { [weak self] hideIcon in
+                self?.statusItem.isVisible = !hideIcon
             }
             .store(in: &cancellables)
     }

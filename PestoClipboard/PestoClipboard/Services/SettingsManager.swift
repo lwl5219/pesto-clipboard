@@ -82,6 +82,12 @@ class SettingsManager: ObservableObject {
         didSet { UserDefaults.standard.set(ignorePasswordManagers, forKey: "ignorePasswordManagers") }
     }
 
+    // MARK: - Advanced Settings
+
+    @Published var hideMenuBarIcon: Bool {
+        didSet { UserDefaults.standard.set(hideMenuBarIcon, forKey: "hideMenuBarIcon") }
+    }
+
     // MARK: - Sort Order
 
     enum SortOrder: String, CaseIterable {
@@ -155,6 +161,8 @@ class SettingsManager: ObservableObject {
 
         let autoDeleteRaw = UserDefaults.standard.string(forKey: "autoDeleteInterval") ?? AutoDeleteInterval.never.rawValue
         self.autoDeleteInterval = AutoDeleteInterval(rawValue: autoDeleteRaw) ?? .never
+
+        self.hideMenuBarIcon = UserDefaults.standard.bool(forKey: "hideMenuBarIcon")
     }
 
     // MARK: - Actions

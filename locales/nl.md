@@ -1,9 +1,9 @@
 # Dutch (nl) Translations
 
 Source language: English (en)
-Total strings: 109
-Translated: 109 (100%)
-Missing: 0
+Total strings: 114
+Translated: 109 (95%)
+Missing: 5
 Stale: 0
 
 ---
@@ -23,6 +23,7 @@ Stale: 0
 | ✓ | 7 days | 7 dagen |
 | ✓ | About Pesto Clipboard | Over Pesto Clipboard |
 | ✓ | Accessibility permission required | Toegankelijkheidsmachtiging vereist |
+| ✓ | Advanced | Geavanceerd |
 | ✓ | Appearance | Weergave |
 | ✓ | Are you sure you want to clear your clipboard history? | Weet je zeker dat je de klembordgeschiedenis wilt wissen? |
 | ✓ | Auto-Delete | Automatisch verwijderen |
@@ -60,6 +61,7 @@ Stale: 0
 | ✓ | Files | Bestanden |
 | ✓ | General | Algemeen |
 | ✓ | Get Started | Aan de slag |
+| ✓ | Hide menu bar icon | Verberg menubalkpictogram |
 | ✓ | History | Geschiedenis |
 | ✓ | Ignore | Negeren |
 | ✓ | Ignore clipboard from other devices | Klembord van andere apparaten negeren |
@@ -71,7 +73,9 @@ Stale: 0
 | ✓ | Keyboard Shortcut | Sneltoets |
 | ✓ | Launch at login | Open bij inloggen |
 | ✓ | Limits | Limieten |
+| ✓ | Make sure you remember your keyboard shortcut! | Zorg dat je je sneltoets onthoudt! |
 | ✓ | Maximum items: | Maximum items: |
+| ✓ | Menu Bar | Menubalk |
 | ✓ | Never | Nooit |
 | ✓ | Next | Volgende |
 | ✓ | No clipboard history | Geen klembordgeschiedenis |
@@ -80,6 +84,7 @@ Stale: 0
 | ✓ | No results found | Geen resultaten gevonden |
 | ✓ | No starred items | Geen favorieten |
 | ✓ | OK | OK |
+| ✓ | Only access Pesto Clipboard via keyboard shortcut | Pesto Clipboard alleen via sneltoets openen |
 | ✓ | Open Pesto Clipboard: | Open Pesto Clipboard: |
 | ✓ | Paste as Original | Plakken als origineel |
 | ✓ | Paste as Plaintext | Plakken als platte tekst |
