@@ -1,9 +1,9 @@
 # Danish (da) Translations
 
 Source language: English (en)
-Total strings: 114
-Translated: 109 (95%)
-Missing: 5
+Total strings: 138
+Translated: 138 (100%)
+Missing: 0
 Stale: 0
 
 ---
@@ -15,6 +15,7 @@ Stale: 0
 | ✓ | %lld | %lld |
 | ✓ | %lld files | %lld filer |
 | ✓ | (%lld) | (%lld) |
+| ✓ | (nightly) | (natlig) |
 | ✓ | 1 day | 1 dag |
 | ✓ | 1 hour | 1 time |
 | ✓ | 12 hours | 12 timer |
@@ -33,6 +34,10 @@ Stale: 0
 | ✓ | Cancel | Annuller |
 | ✓ | Capture | Optag |
 | ✓ | Capture Types | Optagelsestyper |
+| ✓ | Check Now | Tjek nu |
+| ✓ | Check automatically | Tjek automatisk |
+| ✓ | Check for Updates | Søg efter opdateringer |
+| ✓ | Check for updates automatically | Tjek automatisk efter opdateringer |
 | ✓ | Choose a keyboard shortcut to quickly open your clipboard history from anywhere. | Vælg en tastaturgenvej for hurtigt at åbne udklipsholderhistorikken. |
 | ✓ | Choose what types of content to capture from the clipboard. | Vælg hvilke indholdstyper der skal optages fra udklipsholderen. |
 | ✓ | Clear All History | Ryd al historik |
@@ -46,12 +51,15 @@ Stale: 0
 | ✓ | Content Types | Indholdstyper |
 | ✓ | Copy something to get started | Kopiér noget for at komme i gang |
 | ✓ | Copy to Clipboard | Kopiér til udklipsholder |
+| ✓ | Copy to clipboard | Kopiér til udklipsholder |
+| ✓ | Current version: | Aktuel version: |
 | ✓ | Danger Zone | Farezone |
 | ✓ | Date Added | Dato tilføjet |
 | ✓ | Default: Cmd + Shift + V | Standard: Cmd + Shift + V |
 | ✓ | Delete | Slet |
 | ✓ | Delete (⌫) | Slet (⌫) |
 | ✓ | Delete items after: | Slet elementer efter: |
+| ✓ | Download Update | Download opdatering |
 | ✓ | Edit | Rediger |
 | ✓ | Edit Clipboard Item | Rediger udklipsholderpost |
 | ✓ | Error | Fejl |
@@ -70,6 +78,9 @@ Stale: 0
 | ✓ | Image | Billede |
 | ✓ | Images | Billeder |
 | ✓ | Immediately paste after selecting an item | Indsæt straks efter valg af element |
+| ✓ | Installed via App Store | Installeret via App Store |
+| ✓ | Installed via Homebrew | Installeret via Homebrew |
+| ✓ | Installed via direct download | Installeret via direkte download |
 | ✓ | Keyboard Shortcut | Tastaturgenvej |
 | ✓ | Launch at login | Start ved login |
 | ✓ | Limits | Grænser |
@@ -102,6 +113,7 @@ Stale: 0
 | ✓ | Reducing this limit will delete older items immediately. | Reduktion af denne grænse vil slette ældre elementer med det samme. |
 | ✓ | Resume capture | Genoptag optagelse |
 | ✓ | Run Setup Wizard | Kør opsætningsguide |
+| ✓ | Run this command to update: | Kør denne kommando for at opdatere: |
 | ✓ | Save | Gem |
 | ✓ | Search | Søg |
 | ✓ | Set Your Hotkey | Indstil din genvejstast |
@@ -110,7 +122,9 @@ Stale: 0
 | ✓ | Show Clipboard | Vis udklipsholder |
 | ✓ | Show starred only | Vis kun favoritter |
 | ✓ | Showing starred only | Viser kun favoritter |
+| ✓ | Skip This Version | Spring denne version over |
 | ✓ | Sort by: | Sortér efter: |
+| ✓ | Source | Kilde |
 | ✓ | Sources | Kilder |
 | ✓ | Star items to keep them safe | Markér elementer som favoritter for at beskytte dem |
 | ✓ | Starred items are never automatically deleted. | Favoritmarkerede elementer slettes aldrig automatisk. |
@@ -120,9 +134,19 @@ Stale: 0
 | ✓ | Text | Tekst |
 | ✓ | Transparent background | Gennemsigtig baggrund |
 | ✓ | Try restarting the app. If the problem persists, your clipboard data may need to be reset. | Prøv at genstarte appen. Hvis problemet fortsætter, skal dine udklipsholderdata muligvis nulstilles. |
+| ✓ | Update Available | Opdatering tilgængelig |
+| ✓ | Update checks disabled for nightly builds | Opdateringskontrol deaktiveret for natlige builds |
+| ✓ | Updates | Opdateringer |
+| ✓ | Updates are managed through Homebrew. | Opdateringer administreres via Homebrew. |
+| ✓ | Updates are managed through the App Store. | Opdateringer administreres via App Store. |
 | ✓ | Use a glass effect for the clipboard panel | Brug glaseffekt til udklipsholderpanelet |
+| ✓ | Version | Version |
+| ✓ | Version %@ available | Version %@ tilgængelig |
 | ✓ | Welcome to Pesto Clipboard | Velkommen til Pesto Clipboard |
 | ✓ | When enabled, items copied from 1Password, Bitwarden, LastPass, and other password managers will not be saved. | Når aktiveret, vil elementer kopieret fra 1Password, Bitwarden, LastPass og andre adgangskodeadministratorer ikke blive gemt. |
 | ✓ | When enabled, items copied on other Macs or iOS devices via Universal Clipboard will not be saved. | Når aktiveret, vil elementer kopieret på andre Macs eller iOS-enheder via Universal Udklipsholder ikke blive gemt. |
+| ✓ | You're up to date | Du er opdateret |
 | ✓ | Your clipboard history, always at your fingertips. | Din udklipsholderhistorik, altid lige ved hånden. |
+| ✓ | brew upgrade pesto-clipboard | brew upgrade pesto-clipboard |
 | ✓ | items | elementer |
+| ✓ | nightly | natlig |

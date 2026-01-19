@@ -1,9 +1,9 @@
 # Japanese (ja) Translations
 
 Source language: English (en)
-Total strings: 114
-Translated: 109 (95%)
-Missing: 5
+Total strings: 138
+Translated: 138 (100%)
+Missing: 0
 Stale: 0
 
 ---
@@ -15,6 +15,7 @@ Stale: 0
 | ✓ | %lld | %lld |
 | ✓ | %lld files | %lld個のファイル |
 | ✓ | (%lld) | (%lld) |
+| ✓ | (nightly) | (ナイトリー) |
 | ✓ | 1 day | 1日 |
 | ✓ | 1 hour | 1時間 |
 | ✓ | 12 hours | 12時間 |
@@ -33,6 +34,10 @@ Stale: 0
 | ✓ | Cancel | キャンセル |
 | ✓ | Capture | 取り込み |
 | ✓ | Capture Types | 取り込みタイプ |
+| ✓ | Check Now | 今すぐ確認 |
+| ✓ | Check automatically | 自動的に確認 |
+| ✓ | Check for Updates | アップデートを確認 |
+| ✓ | Check for updates automatically | アップデートを自動的に確認 |
 | ✓ | Choose a keyboard shortcut to quickly open your clipboard history from anywhere. | どこからでもクリップボード履歴をすばやく開くためのキーボードショートカットを選択してください。 |
 | ✓ | Choose what types of content to capture from the clipboard. | クリップボードから取り込むコンテンツの種類を選択してください。 |
 | ✓ | Clear All History | すべての履歴を消去 |
@@ -46,12 +51,15 @@ Stale: 0
 | ✓ | Content Types | コンテンツタイプ |
 | ✓ | Copy something to get started | 何かをコピーして始めましょう |
 | ✓ | Copy to Clipboard | クリップボードにコピー |
+| ✓ | Copy to clipboard | クリップボードにコピー |
+| ✓ | Current version: | 現在のバージョン: |
 | ✓ | Danger Zone | 危険ゾーン |
 | ✓ | Date Added | 追加日 |
 | ✓ | Default: Cmd + Shift + V | デフォルト: Cmd + Shift + V |
 | ✓ | Delete | 削除 |
 | ✓ | Delete (⌫) | 削除 (⌫) |
 | ✓ | Delete items after: | 次の期間後に項目を削除: |
+| ✓ | Download Update | アップデートをダウンロード |
 | ✓ | Edit | 編集 |
 | ✓ | Edit Clipboard Item | クリップボード項目を編集 |
 | ✓ | Error | エラー |
@@ -70,6 +78,9 @@ Stale: 0
 | ✓ | Image | 画像 |
 | ✓ | Images | 画像 |
 | ✓ | Immediately paste after selecting an item | 項目を選択後すぐにペースト |
+| ✓ | Installed via App Store | App Store からインストール |
+| ✓ | Installed via Homebrew | Homebrew からインストール |
+| ✓ | Installed via direct download | 直接ダウンロードでインストール |
 | ✓ | Keyboard Shortcut | キーボードショートカット |
 | ✓ | Launch at login | ログイン時に起動 |
 | ✓ | Limits | 制限 |
@@ -102,6 +113,7 @@ Stale: 0
 | ✓ | Reducing this limit will delete older items immediately. | この制限を減らすと、古い項目が直ちに削除されます。 |
 | ✓ | Resume capture | 取り込みを再開 |
 | ✓ | Run Setup Wizard | セットアップウィザードを実行 |
+| ✓ | Run this command to update: | 更新するには次のコマンドを実行してください: |
 | ✓ | Save | 保存 |
 | ✓ | Search | 検索 |
 | ✓ | Set Your Hotkey | ホットキーを設定 |
@@ -110,7 +122,9 @@ Stale: 0
 | ✓ | Show Clipboard | クリップボードを表示 |
 | ✓ | Show starred only | スター付きのみ表示 |
 | ✓ | Showing starred only | スター付きのみ表示中 |
+| ✓ | Skip This Version | このバージョンをスキップ |
 | ✓ | Sort by: | 並び順: |
+| ✓ | Source | ソース |
 | ✓ | Sources | ソース |
 | ✓ | Star items to keep them safe | 項目にスターを付けて安全に保持 |
 | ✓ | Starred items are never automatically deleted. | スター付き項目は自動的に削除されません。 |
@@ -120,9 +134,19 @@ Stale: 0
 | ✓ | Text | テキスト |
 | ✓ | Transparent background | 透明な背景 |
 | ✓ | Try restarting the app. If the problem persists, your clipboard data may need to be reset. | アプリを再起動してください。問題が解決しない場合は、クリップボードデータのリセットが必要な場合があります。 |
+| ✓ | Update Available | アップデートあり |
+| ✓ | Update checks disabled for nightly builds | ナイトリービルドではアップデート確認が無効 |
+| ✓ | Updates | アップデート |
+| ✓ | Updates are managed through Homebrew. | アップデートは Homebrew で管理されます。 |
+| ✓ | Updates are managed through the App Store. | アップデートは App Store で管理されます。 |
 | ✓ | Use a glass effect for the clipboard panel | クリップボードパネルにガラス効果を使用 |
+| ✓ | Version | バージョン |
+| ✓ | Version %@ available | バージョン %@ が利用可能 |
 | ✓ | Welcome to Pesto Clipboard | Pesto Clipboardへようこそ |
 | ✓ | When enabled, items copied from 1Password, Bitwarden, LastPass, and other password managers will not be saved. | 有効にすると、1Password、Bitwarden、LastPassなどのパスワードマネージャーからコピーした項目は保存されません。 |
 | ✓ | When enabled, items copied on other Macs or iOS devices via Universal Clipboard will not be saved. | 有効にすると、ユニバーサルクリップボード経由で他のMacやiOSデバイスでコピーした項目は保存されません。 |
+| ✓ | You're up to date | 最新の状態です |
 | ✓ | Your clipboard history, always at your fingertips. | クリップボード履歴をいつでも手元に。 |
+| ✓ | brew upgrade pesto-clipboard | brew upgrade pesto-clipboard |
 | ✓ | items | 項目 |
+| ✓ | nightly | ナイトリー |

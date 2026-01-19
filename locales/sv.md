@@ -1,9 +1,9 @@
 # Swedish (sv) Translations
 
 Source language: English (en)
-Total strings: 114
-Translated: 109 (95%)
-Missing: 5
+Total strings: 138
+Translated: 138 (100%)
+Missing: 0
 Stale: 0
 
 ---
@@ -15,6 +15,7 @@ Stale: 0
 | ✓ | %lld | %lld |
 | ✓ | %lld files | %lld filer |
 | ✓ | (%lld) | (%lld) |
+| ✓ | (nightly) | (nattlig) |
 | ✓ | 1 day | 1 dag |
 | ✓ | 1 hour | 1 timme |
 | ✓ | 12 hours | 12 timmar |
@@ -33,6 +34,10 @@ Stale: 0
 | ✓ | Cancel | Avbryt |
 | ✓ | Capture | Fånga |
 | ✓ | Capture Types | Fångsttyper |
+| ✓ | Check Now | Kontrollera nu |
+| ✓ | Check automatically | Kontrollera automatiskt |
+| ✓ | Check for Updates | Sök efter uppdateringar |
+| ✓ | Check for updates automatically | Sök efter uppdateringar automatiskt |
 | ✓ | Choose a keyboard shortcut to quickly open your clipboard history from anywhere. | Välj ett kortkommando för att snabbt öppna urklippshistoriken var som helst. |
 | ✓ | Choose what types of content to capture from the clipboard. | Välj vilka typer av innehåll som ska fångas från urklipp. |
 | ✓ | Clear All History | Rensa all historik |
@@ -46,12 +51,15 @@ Stale: 0
 | ✓ | Content Types | Innehållstyper |
 | ✓ | Copy something to get started | Kopiera något för att komma igång |
 | ✓ | Copy to Clipboard | Kopiera till urklipp |
+| ✓ | Copy to clipboard | Kopiera till urklipp |
+| ✓ | Current version: | Aktuell version: |
 | ✓ | Danger Zone | Farozon |
 | ✓ | Date Added | Datum tillagt |
 | ✓ | Default: Cmd + Shift + V | Standard: Cmd + Shift + V |
 | ✓ | Delete | Radera |
 | ✓ | Delete (⌫) | Radera (⌫) |
 | ✓ | Delete items after: | Radera objekt efter: |
+| ✓ | Download Update | Ladda ner uppdatering |
 | ✓ | Edit | Redigera |
 | ✓ | Edit Clipboard Item | Redigera urklippspost |
 | ✓ | Error | Fel |
@@ -70,6 +78,9 @@ Stale: 0
 | ✓ | Image | Bild |
 | ✓ | Images | Bilder |
 | ✓ | Immediately paste after selecting an item | Klistra in direkt efter val av objekt |
+| ✓ | Installed via App Store | Installerad via App Store |
+| ✓ | Installed via Homebrew | Installerad via Homebrew |
+| ✓ | Installed via direct download | Installerad via direkt nedladdning |
 | ✓ | Keyboard Shortcut | Kortkommando |
 | ✓ | Launch at login | Starta vid inloggning |
 | ✓ | Limits | Gränser |
@@ -102,6 +113,7 @@ Stale: 0
 | ✓ | Reducing this limit will delete older items immediately. | Att minska denna gräns raderar äldre objekt omedelbart. |
 | ✓ | Resume capture | Återuppta fångst |
 | ✓ | Run Setup Wizard | Kör installationsguide |
+| ✓ | Run this command to update: | Kör detta kommando för att uppdatera: |
 | ✓ | Save | Spara |
 | ✓ | Search | Sök |
 | ✓ | Set Your Hotkey | Ställ in din snabbtangent |
@@ -110,7 +122,9 @@ Stale: 0
 | ✓ | Show Clipboard | Visa urklipp |
 | ✓ | Show starred only | Visa endast favoriter |
 | ✓ | Showing starred only | Visar endast favoriter |
+| ✓ | Skip This Version | Hoppa över denna version |
 | ✓ | Sort by: | Sortera efter: |
+| ✓ | Source | Källa |
 | ✓ | Sources | Källor |
 | ✓ | Star items to keep them safe | Markera objekt som favoriter för att skydda dem |
 | ✓ | Starred items are never automatically deleted. | Favoriter raderas aldrig automatiskt. |
@@ -120,9 +134,19 @@ Stale: 0
 | ✓ | Text | Text |
 | ✓ | Transparent background | Transparent bakgrund |
 | ✓ | Try restarting the app. If the problem persists, your clipboard data may need to be reset. | Försök starta om appen. Om problemet kvarstår kan dina urklippsdata behöva återställas. |
+| ✓ | Update Available | Uppdatering tillgänglig |
+| ✓ | Update checks disabled for nightly builds | Uppdateringskontroll inaktiverad för nattliga versioner |
+| ✓ | Updates | Uppdateringar |
+| ✓ | Updates are managed through Homebrew. | Uppdateringar hanteras via Homebrew. |
+| ✓ | Updates are managed through the App Store. | Uppdateringar hanteras via App Store. |
 | ✓ | Use a glass effect for the clipboard panel | Använd glaseffekt för urklippspanelen |
+| ✓ | Version | Version |
+| ✓ | Version %@ available | Version %@ tillgänglig |
 | ✓ | Welcome to Pesto Clipboard | Välkommen till Pesto Clipboard |
 | ✓ | When enabled, items copied from 1Password, Bitwarden, LastPass, and other password managers will not be saved. | När aktiverat sparas inte objekt som kopierats från 1Password, Bitwarden, LastPass och andra lösenordshanterare. |
 | ✓ | When enabled, items copied on other Macs or iOS devices via Universal Clipboard will not be saved. | När aktiverat kommer objekt som kopierats på andra Mac-datorer eller iOS-enheter via Universellt urklipp inte att sparas. |
+| ✓ | You're up to date | Du är uppdaterad |
 | ✓ | Your clipboard history, always at your fingertips. | Din urklippshistorik, alltid nära till hands. |
+| ✓ | brew upgrade pesto-clipboard | brew upgrade pesto-clipboard |
 | ✓ | items | objekt |
+| ✓ | nightly | nattlig |

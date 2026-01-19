@@ -88,6 +88,10 @@ class SettingsManager: ObservableObject {
         didSet { UserDefaults.standard.set(hideMenuBarIcon, forKey: "hideMenuBarIcon") }
     }
 
+    @Published var checkForUpdatesAutomatically: Bool {
+        didSet { UserDefaults.standard.set(checkForUpdatesAutomatically, forKey: "checkForUpdatesAutomatically") }
+    }
+
     // MARK: - Sort Order
 
     enum SortOrder: String, CaseIterable {
@@ -163,6 +167,7 @@ class SettingsManager: ObservableObject {
         self.autoDeleteInterval = AutoDeleteInterval(rawValue: autoDeleteRaw) ?? .never
 
         self.hideMenuBarIcon = UserDefaults.standard.bool(forKey: "hideMenuBarIcon")
+        self.checkForUpdatesAutomatically = UserDefaults.standard.object(forKey: "checkForUpdatesAutomatically") as? Bool ?? true
     }
 
     // MARK: - Actions

@@ -1,9 +1,9 @@
 # Korean (ko) Translations
 
 Source language: English (en)
-Total strings: 114
-Translated: 109 (95%)
-Missing: 5
+Total strings: 138
+Translated: 138 (100%)
+Missing: 0
 Stale: 0
 
 ---
@@ -15,6 +15,7 @@ Stale: 0
 | ✓ | %lld | %lld |
 | ✓ | %lld files | %lld개 파일 |
 | ✓ | (%lld) | (%lld) |
+| ✓ | (nightly) | (나이틀리) |
 | ✓ | 1 day | 1일 |
 | ✓ | 1 hour | 1시간 |
 | ✓ | 12 hours | 12시간 |
@@ -33,6 +34,10 @@ Stale: 0
 | ✓ | Cancel | 취소 |
 | ✓ | Capture | 캡처 |
 | ✓ | Capture Types | 캡처 유형 |
+| ✓ | Check Now | 지금 확인 |
+| ✓ | Check automatically | 자동으로 확인 |
+| ✓ | Check for Updates | 업데이트 확인 |
+| ✓ | Check for updates automatically | 자동으로 업데이트 확인 |
 | ✓ | Choose a keyboard shortcut to quickly open your clipboard history from anywhere. | 어디서든 클립보드 기록을 빠르게 열 수 있는 키보드 단축키를 선택하세요. |
 | ✓ | Choose what types of content to capture from the clipboard. | 클립보드에서 캡처할 콘텐츠 유형을 선택하세요. |
 | ✓ | Clear All History | 모든 기록 지우기 |
@@ -46,12 +51,15 @@ Stale: 0
 | ✓ | Content Types | 콘텐츠 유형 |
 | ✓ | Copy something to get started | 복사하여 시작하기 |
 | ✓ | Copy to Clipboard | 클립보드에 복사 |
+| ✓ | Copy to clipboard | 클립보드에 복사 |
+| ✓ | Current version: | 현재 버전: |
 | ✓ | Danger Zone | 위험 구역 |
 | ✓ | Date Added | 추가된 날짜 |
 | ✓ | Default: Cmd + Shift + V | 기본값: Cmd + Shift + V |
 | ✓ | Delete | 삭제 |
 | ✓ | Delete (⌫) | 삭제 (⌫) |
 | ✓ | Delete items after: | 다음 이후 항목 삭제: |
+| ✓ | Download Update | 업데이트 다운로드 |
 | ✓ | Edit | 편집 |
 | ✓ | Edit Clipboard Item | 클립보드 항목 편집 |
 | ✓ | Error | 오류 |
@@ -70,6 +78,9 @@ Stale: 0
 | ✓ | Image | 이미지 |
 | ✓ | Images | 이미지 |
 | ✓ | Immediately paste after selecting an item | 항목 선택 후 즉시 붙여넣기 |
+| ✓ | Installed via App Store | App Store에서 설치됨 |
+| ✓ | Installed via Homebrew | Homebrew로 설치됨 |
+| ✓ | Installed via direct download | 직접 다운로드로 설치됨 |
 | ✓ | Keyboard Shortcut | 키보드 단축키 |
 | ✓ | Launch at login | 로그인 시 실행 |
 | ✓ | Limits | 제한 |
@@ -102,6 +113,7 @@ Stale: 0
 | ✓ | Reducing this limit will delete older items immediately. | 이 제한을 줄이면 이전 항목이 즉시 삭제됩니다. |
 | ✓ | Resume capture | 캡처 재개 |
 | ✓ | Run Setup Wizard | 설정 마법사 실행 |
+| ✓ | Run this command to update: | 업데이트하려면 다음 명령을 실행하세요: |
 | ✓ | Save | 저장 |
 | ✓ | Search | 검색 |
 | ✓ | Set Your Hotkey | 단축키 설정 |
@@ -110,7 +122,9 @@ Stale: 0
 | ✓ | Show Clipboard | 클립보드 표시 |
 | ✓ | Show starred only | 즐겨찾기만 표시 |
 | ✓ | Showing starred only | 즐겨찾기만 표시 중 |
+| ✓ | Skip This Version | 이 버전 건너뛰기 |
 | ✓ | Sort by: | 정렬 기준: |
+| ✓ | Source | 소스 |
 | ✓ | Sources | 소스 |
 | ✓ | Star items to keep them safe | 항목에 별표를 추가하여 안전하게 보관 |
 | ✓ | Starred items are never automatically deleted. | 즐겨찾기 항목은 자동으로 삭제되지 않습니다. |
@@ -120,9 +134,19 @@ Stale: 0
 | ✓ | Text | 텍스트 |
 | ✓ | Transparent background | 투명 배경 |
 | ✓ | Try restarting the app. If the problem persists, your clipboard data may need to be reset. | 앱을 다시 시작해 보세요. 문제가 지속되면 클립보드 데이터를 재설정해야 할 수 있습니다. |
+| ✓ | Update Available | 업데이트 사용 가능 |
+| ✓ | Update checks disabled for nightly builds | 나이틀리 빌드에서는 업데이트 확인 비활성화됨 |
+| ✓ | Updates | 업데이트 |
+| ✓ | Updates are managed through Homebrew. | 업데이트는 Homebrew를 통해 관리됩니다. |
+| ✓ | Updates are managed through the App Store. | 업데이트는 App Store를 통해 관리됩니다. |
 | ✓ | Use a glass effect for the clipboard panel | 클립보드 패널에 유리 효과 사용 |
+| ✓ | Version | 버전 |
+| ✓ | Version %@ available | 버전 %@ 사용 가능 |
 | ✓ | Welcome to Pesto Clipboard | Pesto Clipboard에 오신 것을 환영합니다 |
 | ✓ | When enabled, items copied from 1Password, Bitwarden, LastPass, and other password managers will not be saved. | 활성화하면 1Password, Bitwarden, LastPass 및 기타 암호 관리자에서 복사한 항목이 저장되지 않습니다. |
 | ✓ | When enabled, items copied on other Macs or iOS devices via Universal Clipboard will not be saved. | 활성화하면 유니버설 클립보드를 통해 다른 Mac 또는 iOS 기기에서 복사한 항목이 저장되지 않습니다. |
+| ✓ | You're up to date | 최신 버전입니다 |
 | ✓ | Your clipboard history, always at your fingertips. | 클립보드 기록을 언제나 손쉽게. |
+| ✓ | brew upgrade pesto-clipboard | brew upgrade pesto-clipboard |
 | ✓ | items | 항목 |
+| ✓ | nightly | 나이틀리 |

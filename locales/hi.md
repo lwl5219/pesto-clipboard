@@ -1,9 +1,9 @@
 # Hindi (hi) Translations
 
 Source language: English (en)
-Total strings: 114
-Translated: 109 (95%)
-Missing: 5
+Total strings: 138
+Translated: 138 (100%)
+Missing: 0
 Stale: 0
 
 ---
@@ -15,6 +15,7 @@ Stale: 0
 | ✓ | %lld | %lld |
 | ✓ | %lld files | %lld फ़ाइलें |
 | ✓ | (%lld) | (%lld) |
+| ✓ | (nightly) | (नाइटली) |
 | ✓ | 1 day | 1 दिन |
 | ✓ | 1 hour | 1 घंटा |
 | ✓ | 12 hours | 12 घंटे |
@@ -33,6 +34,10 @@ Stale: 0
 | ✓ | Cancel | रद्द करें |
 | ✓ | Capture | कैप्चर |
 | ✓ | Capture Types | कैप्चर प्रकार |
+| ✓ | Check Now | अभी जाँचें |
+| ✓ | Check automatically | स्वचालित रूप से जाँचें |
+| ✓ | Check for Updates | अपडेट के लिए जाँचें |
+| ✓ | Check for updates automatically | अपडेट स्वचालित रूप से जाँचें |
 | ✓ | Choose a keyboard shortcut to quickly open your clipboard history from anywhere. | कहीं से भी क्लिपबोर्ड इतिहास खोलने के लिए कीबोर्ड शॉर्टकट चुनें। |
 | ✓ | Choose what types of content to capture from the clipboard. | क्लिपबोर्ड से कैप्चर करने के लिए सामग्री प्रकार चुनें। |
 | ✓ | Clear All History | सारा इतिहास साफ़ करें |
@@ -46,12 +51,15 @@ Stale: 0
 | ✓ | Content Types | सामग्री प्रकार |
 | ✓ | Copy something to get started | शुरू करने के लिए कुछ कॉपी करें |
 | ✓ | Copy to Clipboard | क्लिपबोर्ड पर कॉपी करें |
+| ✓ | Copy to clipboard | क्लिपबोर्ड पर कॉपी करें |
+| ✓ | Current version: | वर्तमान संस्करण: |
 | ✓ | Danger Zone | खतरनाक क्षेत्र |
 | ✓ | Date Added | जोड़ने की तारीख |
 | ✓ | Default: Cmd + Shift + V | डिफ़ॉल्ट: Cmd + Shift + V |
 | ✓ | Delete | हटाएं |
 | ✓ | Delete (⌫) | हटाएं (⌫) |
 | ✓ | Delete items after: | इसके बाद आइटम हटाएं: |
+| ✓ | Download Update | अपडेट डाउनलोड करें |
 | ✓ | Edit | संपादित करें |
 | ✓ | Edit Clipboard Item | क्लिपबोर्ड आइटम संपादित करें |
 | ✓ | Error | त्रुटि |
@@ -70,6 +78,9 @@ Stale: 0
 | ✓ | Image | छवि |
 | ✓ | Images | छवियां |
 | ✓ | Immediately paste after selecting an item | आइटम चुनने के बाद तुरंत पेस्ट करें |
+| ✓ | Installed via App Store | App Store से इंस्टॉल किया गया |
+| ✓ | Installed via Homebrew | Homebrew के माध्यम से इंस्टॉल किया गया |
+| ✓ | Installed via direct download | सीधे डाउनलोड द्वारा इंस्टॉल किया गया |
 | ✓ | Keyboard Shortcut | कीबोर्ड शॉर्टकट |
 | ✓ | Launch at login | लॉगिन पर शुरू करें |
 | ✓ | Limits | सीमाएं |
@@ -102,6 +113,7 @@ Stale: 0
 | ✓ | Reducing this limit will delete older items immediately. | इस सीमा को कम करने से पुराने आइटम तुरंत हट जाएंगे। |
 | ✓ | Resume capture | कैप्चर फिर से शुरू करें |
 | ✓ | Run Setup Wizard | सेटअप विज़ार्ड चलाएं |
+| ✓ | Run this command to update: | अपडेट करने के लिए यह कमांड चलाएँ: |
 | ✓ | Save | सहेजें |
 | ✓ | Search | खोजें |
 | ✓ | Set Your Hotkey | अपनी हॉटकी सेट करें |
@@ -110,7 +122,9 @@ Stale: 0
 | ✓ | Show Clipboard | क्लिपबोर्ड दिखाएं |
 | ✓ | Show starred only | केवल तारांकित दिखाएं |
 | ✓ | Showing starred only | केवल तारांकित दिखा रहे हैं |
+| ✓ | Skip This Version | इस संस्करण को छोड़ें |
 | ✓ | Sort by: | इसके अनुसार क्रमबद्ध करें: |
+| ✓ | Source | स्रोत |
 | ✓ | Sources | स्रोत |
 | ✓ | Star items to keep them safe | सुरक्षित रखने के लिए आइटम तारांकित करें |
 | ✓ | Starred items are never automatically deleted. | तारांकित आइटम कभी स्वचालित रूप से नहीं हटाए जाते। |
@@ -120,9 +134,19 @@ Stale: 0
 | ✓ | Text | टेक्स्ट |
 | ✓ | Transparent background | पारदर्शी पृष्ठभूमि |
 | ✓ | Try restarting the app. If the problem persists, your clipboard data may need to be reset. | ऐप को पुनः आरंभ करने का प्रयास करें। यदि समस्या बनी रहती है, तो आपके क्लिपबोर्ड डेटा को रीसेट करने की आवश्यकता हो सकती है। |
+| ✓ | Update Available | अपडेट उपलब्ध |
+| ✓ | Update checks disabled for nightly builds | नाइटली बिल्ड के लिए अपडेट जांच अक्षम |
+| ✓ | Updates | अपडेट |
+| ✓ | Updates are managed through Homebrew. | अपडेट Homebrew के माध्यम से प्रबंधित होते हैं। |
+| ✓ | Updates are managed through the App Store. | अपडेट App Store के माध्यम से प्रबंधित होते हैं। |
 | ✓ | Use a glass effect for the clipboard panel | क्लिपबोर्ड पैनल के लिए ग्लास इफ़ेक्ट उपयोग करें |
+| ✓ | Version | संस्करण |
+| ✓ | Version %@ available | संस्करण %@ उपलब्ध |
 | ✓ | Welcome to Pesto Clipboard | Pesto Clipboard में आपका स्वागत है |
 | ✓ | When enabled, items copied from 1Password, Bitwarden, LastPass, and other password managers will not be saved. | सक्षम होने पर, 1Password, Bitwarden, LastPass और अन्य पासवर्ड प्रबंधकों से कॉपी किए गए आइटम सहेजे नहीं जाएंगे। |
 | ✓ | When enabled, items copied on other Macs or iOS devices via Universal Clipboard will not be saved. | सक्षम होने पर, यूनिवर्सल क्लिपबोर्ड के माध्यम से अन्य Macs या iOS उपकरणों पर कॉपी किए गए आइटम सहेजे नहीं जाएंगे। |
+| ✓ | You're up to date | आप अपडेट हैं |
 | ✓ | Your clipboard history, always at your fingertips. | आपका क्लिपबोर्ड इतिहास, हमेशा आपकी उंगलियों पर। |
+| ✓ | brew upgrade pesto-clipboard | brew upgrade pesto-clipboard |
 | ✓ | items | आइटम |
+| ✓ | nightly | नाइटली |

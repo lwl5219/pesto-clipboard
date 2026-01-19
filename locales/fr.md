@@ -1,9 +1,9 @@
 # French (fr) Translations
 
 Source language: English (en)
-Total strings: 114
-Translated: 109 (95%)
-Missing: 5
+Total strings: 138
+Translated: 138 (100%)
+Missing: 0
 Stale: 0
 
 ---
@@ -15,6 +15,7 @@ Stale: 0
 | ✓ | %lld | %lld |
 | ✓ | %lld files | %lld fichiers |
 | ✓ | (%lld) | (%lld) |
+| ✓ | (nightly) | (nightly) |
 | ✓ | 1 day | 1 jour |
 | ✓ | 1 hour | 1 heure |
 | ✓ | 12 hours | 12 heures |
@@ -33,6 +34,10 @@ Stale: 0
 | ✓ | Cancel | Annuler |
 | ✓ | Capture | Capturer |
 | ✓ | Capture Types | Types de capture |
+| ✓ | Check Now | Vérifier maintenant |
+| ✓ | Check automatically | Vérifier automatiquement |
+| ✓ | Check for Updates | Rechercher des mises à jour |
+| ✓ | Check for updates automatically | Rechercher les mises à jour automatiquement |
 | ✓ | Choose a keyboard shortcut to quickly open your clipboard history from anywhere. | Choisissez un raccourci clavier pour ouvrir rapidement l'historique du presse-papiers. |
 | ✓ | Choose what types of content to capture from the clipboard. | Choisissez les types de contenu à capturer depuis le presse-papiers. |
 | ✓ | Clear All History | Effacer tout l'historique |
@@ -46,12 +51,15 @@ Stale: 0
 | ✓ | Content Types | Types de contenu |
 | ✓ | Copy something to get started | Copiez quelque chose pour commencer |
 | ✓ | Copy to Clipboard | Copier dans le presse-papiers |
+| ✓ | Copy to clipboard | Copier dans le presse-papiers |
+| ✓ | Current version: | Version actuelle : |
 | ✓ | Danger Zone | Zone de danger |
 | ✓ | Date Added | Date d'ajout |
 | ✓ | Default: Cmd + Shift + V | Par défaut : Cmd + Shift + V |
 | ✓ | Delete | Supprimer |
 | ✓ | Delete (⌫) | Supprimer (⌫) |
 | ✓ | Delete items after: | Supprimer les éléments après : |
+| ✓ | Download Update | Télécharger la mise à jour |
 | ✓ | Edit | Modifier |
 | ✓ | Edit Clipboard Item | Modifier l'élément du presse-papiers |
 | ✓ | Error | Erreur |
@@ -70,6 +78,9 @@ Stale: 0
 | ✓ | Image | Image |
 | ✓ | Images | Images |
 | ✓ | Immediately paste after selecting an item | Coller immédiatement après la sélection d'un élément |
+| ✓ | Installed via App Store | Installé via l'App Store |
+| ✓ | Installed via Homebrew | Installé via Homebrew |
+| ✓ | Installed via direct download | Installé par téléchargement direct |
 | ✓ | Keyboard Shortcut | Raccourci clavier |
 | ✓ | Launch at login | Lancer à la connexion |
 | ✓ | Limits | Limites |
@@ -102,6 +113,7 @@ Stale: 0
 | ✓ | Reducing this limit will delete older items immediately. | Réduire cette limite supprimera immédiatement les éléments plus anciens. |
 | ✓ | Resume capture | Reprendre la capture |
 | ✓ | Run Setup Wizard | Lancer l'assistant de configuration |
+| ✓ | Run this command to update: | Exécutez cette commande pour mettre à jour : |
 | ✓ | Save | Enregistrer |
 | ✓ | Search | Rechercher |
 | ✓ | Set Your Hotkey | Définir votre raccourci |
@@ -110,7 +122,9 @@ Stale: 0
 | ✓ | Show Clipboard | Afficher le presse-papiers |
 | ✓ | Show starred only | Afficher uniquement les favoris |
 | ✓ | Showing starred only | Affichage des favoris uniquement |
+| ✓ | Skip This Version | Ignorer cette version |
 | ✓ | Sort by: | Trier par : |
+| ✓ | Source | Source |
 | ✓ | Sources | Sources |
 | ✓ | Star items to keep them safe | Marquez les éléments en favoris pour les protéger |
 | ✓ | Starred items are never automatically deleted. | Les éléments favoris ne sont jamais supprimés automatiquement. |
@@ -120,9 +134,19 @@ Stale: 0
 | ✓ | Text | Texte |
 | ✓ | Transparent background | Arrière-plan transparent |
 | ✓ | Try restarting the app. If the problem persists, your clipboard data may need to be reset. | Essayez de redémarrer l'application. Si le problème persiste, vos données du presse-papiers devront peut-être être réinitialisées. |
+| ✓ | Update Available | Mise à jour disponible |
+| ✓ | Update checks disabled for nightly builds | Vérification des mises à jour désactivée pour les versions nightly |
+| ✓ | Updates | Mises à jour |
+| ✓ | Updates are managed through Homebrew. | Les mises à jour sont gérées via Homebrew. |
+| ✓ | Updates are managed through the App Store. | Les mises à jour sont gérées via l'App Store. |
 | ✓ | Use a glass effect for the clipboard panel | Utiliser un effet de verre pour le panneau du presse-papiers |
+| ✓ | Version | Version |
+| ✓ | Version %@ available | Version %@ disponible |
 | ✓ | Welcome to Pesto Clipboard | Bienvenue dans Pesto Clipboard |
 | ✓ | When enabled, items copied from 1Password, Bitwarden, LastPass, and other password managers will not be saved. | Lorsque activé, les éléments copiés depuis 1Password, Bitwarden, LastPass et autres gestionnaires de mots de passe ne seront pas enregistrés. |
 | ✓ | When enabled, items copied on other Macs or iOS devices via Universal Clipboard will not be saved. | Lorsque activé, les éléments copiés sur d'autres Macs ou appareils iOS via le Presse-papiers universel ne seront pas enregistrés. |
+| ✓ | You're up to date | Vous êtes à jour |
 | ✓ | Your clipboard history, always at your fingertips. | Votre historique du presse-papiers, toujours à portée de main. |
+| ✓ | brew upgrade pesto-clipboard | brew upgrade pesto-clipboard |
 | ✓ | items | éléments |
+| ✓ | nightly | nightly |

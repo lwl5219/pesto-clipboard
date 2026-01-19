@@ -1,9 +1,9 @@
 # Indonesian (id) Translations
 
 Source language: English (en)
-Total strings: 114
-Translated: 109 (95%)
-Missing: 5
+Total strings: 138
+Translated: 138 (100%)
+Missing: 0
 Stale: 0
 
 ---
@@ -15,6 +15,7 @@ Stale: 0
 | ✓ | %lld | %lld |
 | ✓ | %lld files | %lld file |
 | ✓ | (%lld) | (%lld) |
+| ✓ | (nightly) | (nightly) |
 | ✓ | 1 day | 1 hari |
 | ✓ | 1 hour | 1 jam |
 | ✓ | 12 hours | 12 jam |
@@ -33,6 +34,10 @@ Stale: 0
 | ✓ | Cancel | Batal |
 | ✓ | Capture | Tangkap |
 | ✓ | Capture Types | Jenis Tangkapan |
+| ✓ | Check Now | Periksa Sekarang |
+| ✓ | Check automatically | Periksa secara otomatis |
+| ✓ | Check for Updates | Periksa Pembaruan |
+| ✓ | Check for updates automatically | Periksa pembaruan secara otomatis |
 | ✓ | Choose a keyboard shortcut to quickly open your clipboard history from anywhere. | Pilih pintasan keyboard untuk membuka riwayat papan klip dengan cepat dari mana saja. |
 | ✓ | Choose what types of content to capture from the clipboard. | Pilih jenis konten yang akan ditangkap dari papan klip. |
 | ✓ | Clear All History | Hapus Semua Riwayat |
@@ -46,12 +51,15 @@ Stale: 0
 | ✓ | Content Types | Jenis Konten |
 | ✓ | Copy something to get started | Salin sesuatu untuk memulai |
 | ✓ | Copy to Clipboard | Salin ke Papan Klip |
+| ✓ | Copy to clipboard | Salin ke papan klip |
+| ✓ | Current version: | Versi saat ini: |
 | ✓ | Danger Zone | Zona Bahaya |
 | ✓ | Date Added | Tanggal Ditambahkan |
 | ✓ | Default: Cmd + Shift + V | Default: Cmd + Shift + V |
 | ✓ | Delete | Hapus |
 | ✓ | Delete (⌫) | Hapus (⌫) |
 | ✓ | Delete items after: | Hapus item setelah: |
+| ✓ | Download Update | Unduh Pembaruan |
 | ✓ | Edit | Edit |
 | ✓ | Edit Clipboard Item | Edit Item Papan Klip |
 | ✓ | Error | Kesalahan |
@@ -70,6 +78,9 @@ Stale: 0
 | ✓ | Image | Gambar |
 | ✓ | Images | Gambar |
 | ✓ | Immediately paste after selecting an item | Langsung tempel setelah memilih item |
+| ✓ | Installed via App Store | Diinstal melalui App Store |
+| ✓ | Installed via Homebrew | Diinstal melalui Homebrew |
+| ✓ | Installed via direct download | Diinstal melalui unduhan langsung |
 | ✓ | Keyboard Shortcut | Pintasan Keyboard |
 | ✓ | Launch at login | Jalankan saat masuk |
 | ✓ | Limits | Batas |
@@ -102,6 +113,7 @@ Stale: 0
 | ✓ | Reducing this limit will delete older items immediately. | Mengurangi batas ini akan langsung menghapus item yang lebih lama. |
 | ✓ | Resume capture | Lanjutkan tangkapan |
 | ✓ | Run Setup Wizard | Jalankan Wizard Pengaturan |
+| ✓ | Run this command to update: | Jalankan perintah ini untuk memperbarui: |
 | ✓ | Save | Simpan |
 | ✓ | Search | Cari |
 | ✓ | Set Your Hotkey | Atur Tombol Pintasan Anda |
@@ -110,7 +122,9 @@ Stale: 0
 | ✓ | Show Clipboard | Tampilkan Papan Klip |
 | ✓ | Show starred only | Tampilkan hanya berbintang |
 | ✓ | Showing starred only | Menampilkan hanya berbintang |
+| ✓ | Skip This Version | Lewati Versi Ini |
 | ✓ | Sort by: | Urutkan berdasarkan: |
+| ✓ | Source | Sumber |
 | ✓ | Sources | Sumber |
 | ✓ | Star items to keep them safe | Beri bintang item untuk menyimpannya |
 | ✓ | Starred items are never automatically deleted. | Item berbintang tidak pernah dihapus secara otomatis. |
@@ -120,9 +134,19 @@ Stale: 0
 | ✓ | Text | Teks |
 | ✓ | Transparent background | Latar belakang transparan |
 | ✓ | Try restarting the app. If the problem persists, your clipboard data may need to be reset. | Coba mulai ulang aplikasi. Jika masalah berlanjut, data papan klip Anda mungkin perlu direset. |
+| ✓ | Update Available | Pembaruan Tersedia |
+| ✓ | Update checks disabled for nightly builds | Pemeriksaan pembaruan dinonaktifkan untuk build nightly |
+| ✓ | Updates | Pembaruan |
+| ✓ | Updates are managed through Homebrew. | Pembaruan dikelola melalui Homebrew. |
+| ✓ | Updates are managed through the App Store. | Pembaruan dikelola melalui App Store. |
 | ✓ | Use a glass effect for the clipboard panel | Gunakan efek kaca untuk panel papan klip |
+| ✓ | Version | Versi |
+| ✓ | Version %@ available | Versi %@ tersedia |
 | ✓ | Welcome to Pesto Clipboard | Selamat Datang di Pesto Clipboard |
 | ✓ | When enabled, items copied from 1Password, Bitwarden, LastPass, and other password managers will not be saved. | Jika diaktifkan, item yang disalin dari 1Password, Bitwarden, LastPass, dan pengelola kata sandi lainnya tidak akan disimpan. |
 | ✓ | When enabled, items copied on other Macs or iOS devices via Universal Clipboard will not be saved. | Jika diaktifkan, item yang disalin di Mac atau perangkat iOS lain melalui Universal Clipboard tidak akan disimpan. |
+| ✓ | You're up to date | Anda sudah diperbarui |
 | ✓ | Your clipboard history, always at your fingertips. | Riwayat papan klip Anda, selalu dalam jangkauan. |
+| ✓ | brew upgrade pesto-clipboard | brew upgrade pesto-clipboard |
 | ✓ | items | item |
+| ✓ | nightly | nightly |

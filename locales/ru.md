@@ -1,9 +1,9 @@
 # Russian (ru) Translations
 
 Source language: English (en)
-Total strings: 114
-Translated: 109 (95%)
-Missing: 5
+Total strings: 138
+Translated: 138 (100%)
+Missing: 0
 Stale: 0
 
 ---
@@ -15,6 +15,7 @@ Stale: 0
 | ✓ | %lld | %lld |
 | ✓ | %lld files | %lld файлов |
 | ✓ | (%lld) | (%lld) |
+| ✓ | (nightly) | (ночная сборка) |
 | ✓ | 1 day | 1 день |
 | ✓ | 1 hour | 1 час |
 | ✓ | 12 hours | 12 часов |
@@ -33,6 +34,10 @@ Stale: 0
 | ✓ | Cancel | Отмена |
 | ✓ | Capture | Захват |
 | ✓ | Capture Types | Типы захвата |
+| ✓ | Check Now | Проверить сейчас |
+| ✓ | Check automatically | Проверять автоматически |
+| ✓ | Check for Updates | Проверить обновления |
+| ✓ | Check for updates automatically | Автоматически проверять обновления |
 | ✓ | Choose a keyboard shortcut to quickly open your clipboard history from anywhere. | Выберите сочетание клавиш для быстрого доступа к истории буфера обмена. |
 | ✓ | Choose what types of content to capture from the clipboard. | Выберите типы содержимого для захвата из буфера обмена. |
 | ✓ | Clear All History | Очистить всю историю |
@@ -46,12 +51,15 @@ Stale: 0
 | ✓ | Content Types | Типы содержимого |
 | ✓ | Copy something to get started | Скопируйте что-нибудь для начала |
 | ✓ | Copy to Clipboard | Копировать в буфер обмена |
+| ✓ | Copy to clipboard | Копировать в буфер обмена |
+| ✓ | Current version: | Текущая версия: |
 | ✓ | Danger Zone | Опасная зона |
 | ✓ | Date Added | Дата добавления |
 | ✓ | Default: Cmd + Shift + V | По умолчанию: Cmd + Shift + V |
 | ✓ | Delete | Удалить |
 | ✓ | Delete (⌫) | Удалить (⌫) |
 | ✓ | Delete items after: | Удалять элементы через: |
+| ✓ | Download Update | Загрузить обновление |
 | ✓ | Edit | Редактировать |
 | ✓ | Edit Clipboard Item | Редактировать элемент буфера |
 | ✓ | Error | Ошибка |
@@ -70,6 +78,9 @@ Stale: 0
 | ✓ | Image | Изображение |
 | ✓ | Images | Изображения |
 | ✓ | Immediately paste after selecting an item | Вставлять сразу после выбора элемента |
+| ✓ | Installed via App Store | Установлено через App Store |
+| ✓ | Installed via Homebrew | Установлено через Homebrew |
+| ✓ | Installed via direct download | Установлено напрямую |
 | ✓ | Keyboard Shortcut | Сочетание клавиш |
 | ✓ | Launch at login | Запускать при входе |
 | ✓ | Limits | Ограничения |
@@ -102,6 +113,7 @@ Stale: 0
 | ✓ | Reducing this limit will delete older items immediately. | Уменьшение этого ограничения немедленно удалит старые элементы. |
 | ✓ | Resume capture | Возобновить захват |
 | ✓ | Run Setup Wizard | Запустить мастер настройки |
+| ✓ | Run this command to update: | Выполните эту команду для обновления: |
 | ✓ | Save | Сохранить |
 | ✓ | Search | Поиск |
 | ✓ | Set Your Hotkey | Настройте горячую клавишу |
@@ -110,7 +122,9 @@ Stale: 0
 | ✓ | Show Clipboard | Показать буфер обмена |
 | ✓ | Show starred only | Показать только избранное |
 | ✓ | Showing starred only | Показано только избранное |
+| ✓ | Skip This Version | Пропустить эту версию |
 | ✓ | Sort by: | Сортировка: |
+| ✓ | Source | Источник |
 | ✓ | Sources | Источники |
 | ✓ | Star items to keep them safe | Добавьте в избранное для сохранности |
 | ✓ | Starred items are never automatically deleted. | Избранные элементы никогда не удаляются автоматически. |
@@ -120,9 +134,19 @@ Stale: 0
 | ✓ | Text | Текст |
 | ✓ | Transparent background | Прозрачный фон |
 | ✓ | Try restarting the app. If the problem persists, your clipboard data may need to be reset. | Попробуйте перезапустить приложение. Если проблема сохраняется, возможно, потребуется сбросить данные буфера обмена. |
+| ✓ | Update Available | Доступно обновление |
+| ✓ | Update checks disabled for nightly builds | Проверка обновлений отключена для ночных сборок |
+| ✓ | Updates | Обновления |
+| ✓ | Updates are managed through Homebrew. | Обновления управляются через Homebrew. |
+| ✓ | Updates are managed through the App Store. | Обновления управляются через App Store. |
 | ✓ | Use a glass effect for the clipboard panel | Использовать эффект стекла для панели буфера обмена |
+| ✓ | Version | Версия |
+| ✓ | Version %@ available | Доступна версия %@ |
 | ✓ | Welcome to Pesto Clipboard | Добро пожаловать в Pesto Clipboard |
 | ✓ | When enabled, items copied from 1Password, Bitwarden, LastPass, and other password managers will not be saved. | При включении элементы, скопированные из 1Password, Bitwarden, LastPass и других менеджеров паролей, не будут сохранены. |
 | ✓ | When enabled, items copied on other Macs or iOS devices via Universal Clipboard will not be saved. | При включении элементы, скопированные на других Mac или iOS-устройствах через Универсальный буфер обмена, не будут сохранены. |
+| ✓ | You're up to date | У вас последняя версия |
 | ✓ | Your clipboard history, always at your fingertips. | История буфера обмена всегда под рукой. |
+| ✓ | brew upgrade pesto-clipboard | brew upgrade pesto-clipboard |
 | ✓ | items | элементов |
+| ✓ | nightly | ночная |

@@ -1,9 +1,9 @@
 # Spanish (es) Translations
 
 Source language: English (en)
-Total strings: 114
-Translated: 109 (95%)
-Missing: 5
+Total strings: 138
+Translated: 138 (100%)
+Missing: 0
 Stale: 0
 
 ---
@@ -15,6 +15,7 @@ Stale: 0
 | ✓ | %lld | %lld |
 | ✓ | %lld files | %lld archivos |
 | ✓ | (%lld) | (%lld) |
+| ✓ | (nightly) | (nightly) |
 | ✓ | 1 day | 1 día |
 | ✓ | 1 hour | 1 hora |
 | ✓ | 12 hours | 12 horas |
@@ -33,6 +34,10 @@ Stale: 0
 | ✓ | Cancel | Cancelar |
 | ✓ | Capture | Capturar |
 | ✓ | Capture Types | Tipos de captura |
+| ✓ | Check Now | Comprobar ahora |
+| ✓ | Check automatically | Comprobar automáticamente |
+| ✓ | Check for Updates | Buscar actualizaciones |
+| ✓ | Check for updates automatically | Comprobar actualizaciones automáticamente |
 | ✓ | Choose a keyboard shortcut to quickly open your clipboard history from anywhere. | Elige un atajo de teclado para abrir rápidamente el historial del portapapeles desde cualquier lugar. |
 | ✓ | Choose what types of content to capture from the clipboard. | Elige qué tipos de contenido capturar del portapapeles. |
 | ✓ | Clear All History | Borrar todo el historial |
@@ -46,12 +51,15 @@ Stale: 0
 | ✓ | Content Types | Tipos de contenido |
 | ✓ | Copy something to get started | Copia algo para comenzar |
 | ✓ | Copy to Clipboard | Copiar al portapapeles |
+| ✓ | Copy to clipboard | Copiar al portapapeles |
+| ✓ | Current version: | Versión actual: |
 | ✓ | Danger Zone | Zona de peligro |
 | ✓ | Date Added | Fecha de adición |
 | ✓ | Default: Cmd + Shift + V | Por defecto: Cmd + Shift + V |
 | ✓ | Delete | Eliminar |
 | ✓ | Delete (⌫) | Eliminar (⌫) |
 | ✓ | Delete items after: | Eliminar elementos después de: |
+| ✓ | Download Update | Descargar actualización |
 | ✓ | Edit | Editar |
 | ✓ | Edit Clipboard Item | Editar elemento del portapapeles |
 | ✓ | Error | Error |
@@ -70,6 +78,9 @@ Stale: 0
 | ✓ | Image | Imagen |
 | ✓ | Images | Imágenes |
 | ✓ | Immediately paste after selecting an item | Pegar inmediatamente después de seleccionar un elemento |
+| ✓ | Installed via App Store | Instalado desde App Store |
+| ✓ | Installed via Homebrew | Instalado vía Homebrew |
+| ✓ | Installed via direct download | Instalado por descarga directa |
 | ✓ | Keyboard Shortcut | Atajo de teclado |
 | ✓ | Launch at login | Iniciar al iniciar sesión |
 | ✓ | Limits | Límites |
@@ -102,6 +113,7 @@ Stale: 0
 | ✓ | Reducing this limit will delete older items immediately. | Reducir este límite eliminará los elementos más antiguos inmediatamente. |
 | ✓ | Resume capture | Reanudar captura |
 | ✓ | Run Setup Wizard | Ejecutar asistente de configuración |
+| ✓ | Run this command to update: | Ejecuta este comando para actualizar: |
 | ✓ | Save | Guardar |
 | ✓ | Search | Buscar |
 | ✓ | Set Your Hotkey | Configura tu atajo de teclado |
@@ -110,7 +122,9 @@ Stale: 0
 | ✓ | Show Clipboard | Mostrar portapapeles |
 | ✓ | Show starred only | Mostrar solo destacados |
 | ✓ | Showing starred only | Mostrando solo destacados |
+| ✓ | Skip This Version | Omitir esta versión |
 | ✓ | Sort by: | Ordenar por: |
+| ✓ | Source | Fuente |
 | ✓ | Sources | Fuentes |
 | ✓ | Star items to keep them safe | Destaca elementos para mantenerlos seguros |
 | ✓ | Starred items are never automatically deleted. | Los elementos destacados nunca se eliminan automáticamente. |
@@ -120,9 +134,19 @@ Stale: 0
 | ✓ | Text | Texto |
 | ✓ | Transparent background | Fondo transparente |
 | ✓ | Try restarting the app. If the problem persists, your clipboard data may need to be reset. | Intenta reiniciar la aplicación. Si el problema persiste, es posible que necesites restablecer los datos del portapapeles. |
+| ✓ | Update Available | Actualización disponible |
+| ✓ | Update checks disabled for nightly builds | Comprobación de actualizaciones desactivada para compilaciones nightly |
+| ✓ | Updates | Actualizaciones |
+| ✓ | Updates are managed through Homebrew. | Las actualizaciones se gestionan a través de Homebrew. |
+| ✓ | Updates are managed through the App Store. | Las actualizaciones se gestionan a través de App Store. |
 | ✓ | Use a glass effect for the clipboard panel | Usar efecto de cristal para el panel del portapapeles |
+| ✓ | Version | Versión |
+| ✓ | Version %@ available | Versión %@ disponible |
 | ✓ | Welcome to Pesto Clipboard | Bienvenido a Pesto Clipboard |
 | ✓ | When enabled, items copied from 1Password, Bitwarden, LastPass, and other password managers will not be saved. | Cuando está habilitado, los elementos copiados de 1Password, Bitwarden, LastPass y otros gestores de contraseñas no se guardarán. |
 | ✓ | When enabled, items copied on other Macs or iOS devices via Universal Clipboard will not be saved. | Cuando está habilitado, los elementos copiados en otros Macs o dispositivos iOS a través del Portapapeles Universal no se guardarán. |
+| ✓ | You're up to date | Estás actualizado |
 | ✓ | Your clipboard history, always at your fingertips. | Tu historial del portapapeles, siempre al alcance. |
+| ✓ | brew upgrade pesto-clipboard | brew upgrade pesto-clipboard |
 | ✓ | items | elementos |
+| ✓ | nightly | nightly |

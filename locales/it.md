@@ -1,9 +1,9 @@
 # Italian (it) Translations
 
 Source language: English (en)
-Total strings: 114
-Translated: 109 (95%)
-Missing: 5
+Total strings: 138
+Translated: 138 (100%)
+Missing: 0
 Stale: 0
 
 ---
@@ -15,6 +15,7 @@ Stale: 0
 | ✓ | %lld | %lld |
 | ✓ | %lld files | %lld file |
 | ✓ | (%lld) | (%lld) |
+| ✓ | (nightly) | (nightly) |
 | ✓ | 1 day | 1 giorno |
 | ✓ | 1 hour | 1 ora |
 | ✓ | 12 hours | 12 ore |
@@ -33,6 +34,10 @@ Stale: 0
 | ✓ | Cancel | Annulla |
 | ✓ | Capture | Acquisisci |
 | ✓ | Capture Types | Tipi di acquisizione |
+| ✓ | Check Now | Controlla ora |
+| ✓ | Check automatically | Controlla automaticamente |
+| ✓ | Check for Updates | Verifica aggiornamenti |
+| ✓ | Check for updates automatically | Controlla aggiornamenti automaticamente |
 | ✓ | Choose a keyboard shortcut to quickly open your clipboard history from anywhere. | Scegli una scorciatoia da tastiera per aprire rapidamente la cronologia degli appunti. |
 | ✓ | Choose what types of content to capture from the clipboard. | Scegli quali tipi di contenuto acquisire dagli appunti. |
 | ✓ | Clear All History | Cancella tutta la cronologia |
@@ -46,12 +51,15 @@ Stale: 0
 | ✓ | Content Types | Tipi di contenuto |
 | ✓ | Copy something to get started | Copia qualcosa per iniziare |
 | ✓ | Copy to Clipboard | Copia negli appunti |
+| ✓ | Copy to clipboard | Copia negli appunti |
+| ✓ | Current version: | Versione attuale: |
 | ✓ | Danger Zone | Zona pericolosa |
 | ✓ | Date Added | Data di aggiunta |
 | ✓ | Default: Cmd + Shift + V | Predefinito: Cmd + Shift + V |
 | ✓ | Delete | Elimina |
 | ✓ | Delete (⌫) | Elimina (⌫) |
 | ✓ | Delete items after: | Elimina elementi dopo: |
+| ✓ | Download Update | Scarica aggiornamento |
 | ✓ | Edit | Modifica |
 | ✓ | Edit Clipboard Item | Modifica elemento appunti |
 | ✓ | Error | Errore |
@@ -70,6 +78,9 @@ Stale: 0
 | ✓ | Image | Immagine |
 | ✓ | Images | Immagini |
 | ✓ | Immediately paste after selecting an item | Incolla immediatamente dopo aver selezionato un elemento |
+| ✓ | Installed via App Store | Installato tramite App Store |
+| ✓ | Installed via Homebrew | Installato tramite Homebrew |
+| ✓ | Installed via direct download | Installato tramite download diretto |
 | ✓ | Keyboard Shortcut | Scorciatoia da tastiera |
 | ✓ | Launch at login | Avvia all'accesso |
 | ✓ | Limits | Limiti |
@@ -102,6 +113,7 @@ Stale: 0
 | ✓ | Reducing this limit will delete older items immediately. | Ridurre questo limite eliminerà immediatamente gli elementi più vecchi. |
 | ✓ | Resume capture | Riprendi acquisizione |
 | ✓ | Run Setup Wizard | Esegui configurazione guidata |
+| ✓ | Run this command to update: | Esegui questo comando per aggiornare: |
 | ✓ | Save | Salva |
 | ✓ | Search | Cerca |
 | ✓ | Set Your Hotkey | Imposta la tua scorciatoia |
@@ -110,7 +122,9 @@ Stale: 0
 | ✓ | Show Clipboard | Mostra appunti |
 | ✓ | Show starred only | Mostra solo preferiti |
 | ✓ | Showing starred only | Visualizzazione solo preferiti |
+| ✓ | Skip This Version | Salta questa versione |
 | ✓ | Sort by: | Ordina per: |
+| ✓ | Source | Origine |
 | ✓ | Sources | Fonti |
 | ✓ | Star items to keep them safe | Aggiungi elementi ai preferiti per proteggerli |
 | ✓ | Starred items are never automatically deleted. | Gli elementi preferiti non vengono mai eliminati automaticamente. |
@@ -120,9 +134,19 @@ Stale: 0
 | ✓ | Text | Testo |
 | ✓ | Transparent background | Sfondo trasparente |
 | ✓ | Try restarting the app. If the problem persists, your clipboard data may need to be reset. | Prova a riavviare l'app. Se il problema persiste, potrebbe essere necessario reimpostare i dati degli appunti. |
+| ✓ | Update Available | Aggiornamento disponibile |
+| ✓ | Update checks disabled for nightly builds | Controllo aggiornamenti disabilitato per le build nightly |
+| ✓ | Updates | Aggiornamenti |
+| ✓ | Updates are managed through Homebrew. | Gli aggiornamenti sono gestiti tramite Homebrew. |
+| ✓ | Updates are managed through the App Store. | Gli aggiornamenti sono gestiti tramite App Store. |
 | ✓ | Use a glass effect for the clipboard panel | Usa un effetto vetro per il pannello degli appunti |
+| ✓ | Version | Versione |
+| ✓ | Version %@ available | Versione %@ disponibile |
 | ✓ | Welcome to Pesto Clipboard | Benvenuto in Pesto Clipboard |
 | ✓ | When enabled, items copied from 1Password, Bitwarden, LastPass, and other password managers will not be saved. | Quando abilitato, gli elementi copiati da 1Password, Bitwarden, LastPass e altri gestori password non verranno salvati. |
 | ✓ | When enabled, items copied on other Macs or iOS devices via Universal Clipboard will not be saved. | Quando abilitato, gli elementi copiati su altri Mac o dispositivi iOS tramite Appunti Universali non verranno salvati. |
+| ✓ | You're up to date | Sei aggiornato |
 | ✓ | Your clipboard history, always at your fingertips. | La cronologia degli appunti, sempre a portata di mano. |
+| ✓ | brew upgrade pesto-clipboard | brew upgrade pesto-clipboard |
 | ✓ | items | elementi |
+| ✓ | nightly | nightly |
