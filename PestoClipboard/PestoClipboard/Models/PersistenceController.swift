@@ -46,7 +46,12 @@ struct PersistenceController {
         clipboardItemEntity.name = "ClipboardItem"
         clipboardItemEntity.managedObjectClassName = "ClipboardItem"
 
-        // Attributes
+        // ClipboardItemContent entity (for multi-format storage)
+        let contentEntity = NSEntityDescription()
+        contentEntity.name = "ClipboardItemContent"
+        contentEntity.managedObjectClassName = "ClipboardItemContent"
+
+        // Attributes for ClipboardItem
         let idAttribute = NSAttributeDescription()
         idAttribute.name = "id"
         idAttribute.attributeType = .UUIDAttributeType
@@ -99,6 +104,51 @@ struct PersistenceController {
         isPinnedAttribute.isOptional = false
         isPinnedAttribute.defaultValue = false
 
+        let totalSizeBytesAttribute = NSAttributeDescription()
+        totalSizeBytesAttribute.name = "totalSizeBytes"
+        totalSizeBytesAttribute.attributeType = .integer64AttributeType
+        totalSizeBytesAttribute.isOptional = false
+        totalSizeBytesAttribute.defaultValue = 0
+
+        // Attributes for ClipboardItemContent
+        let contentTypeAttr = NSAttributeDescription()
+        contentTypeAttr.name = "type"
+        contentTypeAttr.attributeType = .stringAttributeType
+        contentTypeAttr.isOptional = false
+
+        let contentValueAttr = NSAttributeDescription()
+        contentValueAttr.name = "value"
+        contentValueAttr.attributeType = .binaryDataAttributeType
+        contentValueAttr.isOptional = true
+        contentValueAttr.allowsExternalBinaryDataStorage = true
+
+        let contentOrderAttr = NSAttributeDescription()
+        contentOrderAttr.name = "order"
+        contentOrderAttr.attributeType = .integer16AttributeType
+        contentOrderAttr.isOptional = false
+        contentOrderAttr.defaultValue = 0
+
+        // Relationships
+        let contentsRelationship = NSRelationshipDescription()
+        contentsRelationship.name = "contents"
+        contentsRelationship.destinationEntity = contentEntity
+        contentsRelationship.isOptional = true
+        contentsRelationship.deleteRule = .cascadeDeleteRule
+        contentsRelationship.minCount = 0
+        contentsRelationship.maxCount = 0  // To-many
+
+        let itemRelationship = NSRelationshipDescription()
+        itemRelationship.name = "item"
+        itemRelationship.destinationEntity = clipboardItemEntity
+        itemRelationship.isOptional = false
+        itemRelationship.deleteRule = .nullifyDeleteRule
+        itemRelationship.minCount = 1
+        itemRelationship.maxCount = 1  // To-one
+
+        // Set inverse relationships
+        contentsRelationship.inverseRelationship = itemRelationship
+        itemRelationship.inverseRelationship = contentsRelationship
+
         clipboardItemEntity.properties = [
             idAttribute,
             createdAtAttribute,
@@ -109,10 +159,19 @@ struct PersistenceController {
             imageDataAttribute,
             thumbnailDataAttribute,
             fileURLsAttribute,
-            isPinnedAttribute
+            isPinnedAttribute,
+            totalSizeBytesAttribute,
+            contentsRelationship
         ]
 
-        model.entities = [clipboardItemEntity]
+        contentEntity.properties = [
+            contentTypeAttr,
+            contentValueAttr,
+            contentOrderAttr,
+            itemRelationship
+        ]
+
+        model.entities = [clipboardItemEntity, contentEntity]
 
         return model
     }

@@ -110,15 +110,30 @@ class ClipboardMonitor: ObservableObject {
             return
         }
 
-        // Check for images
-        if settings.captureImages, let imageData = extractImageData(from: pasteboard) {
-            let thumbnailData = ThumbnailGenerator.generateThumbnail(from: imageData, maxSize: Constants.thumbnailMaxSize)
-            if thumbnailData == nil {
-                Self.logger.warning("Failed to generate thumbnail for image (\(imageData.count) bytes)")
+        // Check for images - extract ALL available formats
+        if settings.captureImages {
+            let imageContents = extractAllImageContents(from: pasteboard)
+            if !imageContents.isEmpty {
+                // Find best format for thumbnail generation (prefer PNG/TIFF over PDF)
+                let thumbnailSourceData = imageContents.first { $0.type == NSPasteboard.PasteboardType.png.rawValue }?.data
+                    ?? imageContents.first { $0.type == NSPasteboard.PasteboardType.tiff.rawValue }?.data
+                    ?? imageContents.first?.data
+
+                let thumbnailData: Data?
+                if let sourceData = thumbnailSourceData {
+                    thumbnailData = ThumbnailGenerator.generateThumbnail(from: sourceData, maxSize: Constants.thumbnailMaxSize)
+                    if thumbnailData == nil {
+                        Self.logger.warning("Failed to generate thumbnail for image")
+                    }
+                } else {
+                    thumbnailData = nil
+                }
+
+                let totalSize = imageContents.reduce(0) { $0 + $1.data.count }
+                Self.logger.info("Captured image with \(imageContents.count) format(s), total \(totalSize) bytes")
+                historyManager.addImageItem(contents: imageContents, thumbnailData: thumbnailData)
+                return
             }
-            Self.logger.info("Captured image (\(imageData.count) bytes)")
-            historyManager.addImageItem(imageData: imageData, thumbnailData: thumbnailData)
-            return
         }
 
         // Check for text (including RTF)
@@ -171,6 +186,50 @@ class ClipboardMonitor: ObservableObject {
     }
 
     // MARK: - Content Extraction
+
+    /// Represents a single pasteboard content format with its type and data
+    struct PasteboardContent {
+        let type: String
+        let data: Data
+    }
+
+    /// Supported image pasteboard types for multi-format capture
+    private static let supportedImageTypes: Set<NSPasteboard.PasteboardType> = [
+        // Standard image formats
+        .png,
+        .tiff,
+        .pdf,
+        NSPasteboard.PasteboardType("public.jpeg"),
+        NSPasteboard.PasteboardType("public.heic"),
+        // Adobe formats
+        NSPasteboard.PasteboardType("com.adobe.pdf"),
+        NSPasteboard.PasteboardType("com.adobe.illustrator.ai"),
+        // Affinity (Serif) native formats - preserves vectors/layers
+        NSPasteboard.PasteboardType("com.seriflabs.persona.nodes"),
+        NSPasteboard.PasteboardType("com.seriflabs.affinitydesigner"),
+        NSPasteboard.PasteboardType("com.seriflabs.affinityphoto"),
+        NSPasteboard.PasteboardType("com.seriflabs.affinitypublisher"),
+    ]
+
+    /// Extracts all available image formats from pasteboard (multi-format storage)
+    private func extractAllImageContents(from pasteboard: NSPasteboard) -> [PasteboardContent] {
+        var contents: [PasteboardContent] = []
+
+        for item in pasteboard.pasteboardItems ?? [] {
+            for type in item.types where Self.supportedImageTypes.contains(type) {
+                if let data = item.data(forType: type) {
+                    contents.append(PasteboardContent(type: type.rawValue, data: data))
+                }
+            }
+        }
+
+        // If no direct formats found, try NSImage fallback and convert to PNG
+        if contents.isEmpty, let image = NSImage(pasteboard: pasteboard), let pngData = image.pngData() {
+            contents.append(PasteboardContent(type: NSPasteboard.PasteboardType.png.rawValue, data: pngData))
+        }
+
+        return contents
+    }
 
     private func extractFileURLs(from pasteboard: NSPasteboard) -> [URL]? {
         // Try to get file URLs

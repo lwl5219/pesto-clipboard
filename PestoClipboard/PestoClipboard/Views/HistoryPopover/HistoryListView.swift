@@ -8,21 +8,34 @@ struct HistoryListView: View {
     var body: some View {
         ScrollViewReader { proxy in
             List {
-                ForEach(Array(viewModel.filteredItems.enumerated()), id: \.element.id) { index, item in
+                ForEach(Array(viewModel.filteredDecorators.enumerated()), id: \.element.id) { index, decorator in
                     HistoryItemRow(
-                        item: item,
+                        decorator: decorator,
                         index: index + 1,
                         isSelected: index == viewModel.selectedIndex && !isSearchFocused,
-                        onToggleStar: { viewModel.historyManager.togglePin(item) }
+                        onToggleStar: { viewModel.historyManager.togglePin(decorator.item) }
                     )
-                    .id(item.id)
-                    .tag(item.id)
+                    .id(decorator.id)
+                    .tag(decorator.id)
                     .onTapGesture {
                         viewModel.handleItemTap(at: index, onDismiss: onDismiss)
                     }
+                    .onAppear {
+                        decorator.isVisible = true
+                        decorator.ensureThumbnailImage()
+                    }
+                    .onDisappear {
+                        decorator.isVisible = false
+                        // Delay cleanup to avoid thrashing during fast scrolling
+                        DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) {
+                            if !decorator.isVisible {
+                                decorator.cleanupImages()
+                            }
+                        }
+                    }
                     .contextMenu {
                         ItemContextMenu(
-                            item: item,
+                            item: decorator.item,
                             index: index,
                             viewModel: viewModel,
                             onDismiss: onDismiss
@@ -37,9 +50,9 @@ struct HistoryListView: View {
                 viewModel.selectedIndex = 0
                 scrollToFirst(proxy: proxy)
             }
-            .onChange(of: viewModel.filteredItems) { _, newItems in
-                if !viewModel.suppressScrollToTop, let firstItem = newItems.first {
-                    proxy.scrollTo(firstItem.id, anchor: .top)
+            .onChange(of: viewModel.filteredDecorators) { _, newDecorators in
+                if !viewModel.suppressScrollToTop, let first = newDecorators.first {
+                    proxy.scrollTo(first.id, anchor: .top)
                 }
                 viewModel.suppressScrollToTop = false
                 viewModel.adjustSelectionAfterItemsChange()
@@ -51,15 +64,15 @@ struct HistoryListView: View {
     }
 
     private func scrollToFirst(proxy: ScrollViewProxy) {
-        if let firstItem = viewModel.filteredItems.first {
-            proxy.scrollTo(firstItem.id, anchor: .top)
+        if let first = viewModel.filteredDecorators.first {
+            proxy.scrollTo(first.id, anchor: .top)
         }
     }
 
     private func scrollToSelected(index: Int, proxy: ScrollViewProxy) {
-        if index >= 0 && index < viewModel.filteredItems.count {
+        if index >= 0 && index < viewModel.filteredDecorators.count {
             withAnimation {
-                proxy.scrollTo(viewModel.filteredItems[index].id, anchor: .center)
+                proxy.scrollTo(viewModel.filteredDecorators[index].id, anchor: .center)
             }
         }
     }

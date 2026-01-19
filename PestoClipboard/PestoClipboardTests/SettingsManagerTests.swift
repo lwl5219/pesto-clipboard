@@ -136,10 +136,6 @@ struct ConstantsTests {
         #expect(Constants.clipboardPollInterval == 0.5)
     }
 
-    @Test func maxImageSizeBytes() {
-        #expect(Constants.maxImageSizeBytes == 5_000_000) // 5MB
-    }
-
     @Test func thumbnailMaxSize() {
         #expect(Constants.thumbnailMaxSize == 128)
     }

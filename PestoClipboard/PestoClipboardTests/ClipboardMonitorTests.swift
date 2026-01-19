@@ -15,6 +15,7 @@ final class MockClipboardHistoryManager: ClipboardHistoryManaging {
 
     private(set) var addTextItemCalls: [(text: String, rtfData: Data?)] = []
     private(set) var addImageItemCalls: [(imageData: Data, thumbnailData: Data?)] = []
+    private(set) var addImageItemContentsCalls: [(contents: [ClipboardMonitor.PasteboardContent], thumbnailData: Data?)] = []
     private(set) var addFileItemCalls: [[URL]] = []
 
     private(set) var moveToTopCalls: [ClipboardItem] = []
@@ -42,6 +43,10 @@ final class MockClipboardHistoryManager: ClipboardHistoryManaging {
 
     func addImageItem(imageData: Data, thumbnailData: Data?) {
         addImageItemCalls.append((imageData: imageData, thumbnailData: thumbnailData))
+    }
+
+    func addImageItem(contents: [ClipboardMonitor.PasteboardContent], thumbnailData: Data?) {
+        addImageItemContentsCalls.append((contents: contents, thumbnailData: thumbnailData))
     }
 
     func addFileItem(urls: [URL]) {
@@ -84,6 +89,7 @@ final class MockClipboardHistoryManager: ClipboardHistoryManaging {
         searchItemsQueries = []
         addTextItemCalls = []
         addImageItemCalls = []
+        addImageItemContentsCalls = []
         addFileItemCalls = []
         moveToTopCalls = []
         togglePinCalls = []

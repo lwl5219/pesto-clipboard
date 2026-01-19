@@ -13,6 +13,8 @@ public class ClipboardItem: NSManagedObject, Identifiable {
     @NSManaged public var thumbnailData: Data?
     @NSManaged public var fileURLsData: Data?
     @NSManaged public var isPinned: Bool
+    @NSManaged public var totalSizeBytes: Int64
+    @NSManaged public var contents: Set<ClipboardItemContent>?
 
     // MARK: - Computed Properties
 

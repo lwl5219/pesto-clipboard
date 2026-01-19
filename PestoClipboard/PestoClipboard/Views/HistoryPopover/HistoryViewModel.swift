@@ -20,6 +20,10 @@ class HistoryViewModel: ObservableObject {
     // Internal state for scroll behavior
     var suppressScrollToTop: Bool = false
 
+    // MARK: - Decorator Cache
+
+    private var decoratorCache: [UUID: ClipboardItemDecorator] = [:]
+
     // MARK: - Computed Properties
 
     var filteredItems: [ClipboardItem] {
@@ -27,6 +31,29 @@ class HistoryViewModel: ObservableObject {
             return historyManager.items.filter { $0.isPinned }
         }
         return historyManager.items
+    }
+
+    /// Returns filtered items wrapped in decorators for lazy loading.
+    /// Reuses existing decorators for items that are still present.
+    var filteredDecorators: [ClipboardItemDecorator] {
+        let items = filteredItems
+        var result: [ClipboardItemDecorator] = []
+
+        for item in items {
+            if let existing = decoratorCache[item.id] {
+                result.append(existing)
+            } else {
+                let decorator = ClipboardItemDecorator(item: item)
+                decoratorCache[item.id] = decorator
+                result.append(decorator)
+            }
+        }
+
+        // Clean up decorators for items no longer present
+        let currentIds = Set(items.map { $0.id })
+        decoratorCache = decoratorCache.filter { currentIds.contains($0.key) }
+
+        return result
     }
 
     var hasError: Bool {
@@ -101,30 +128,27 @@ class HistoryViewModel: ObservableObject {
     }
 
     func adjustSelectionAfterItemsChange() {
-        if selectedIndex >= filteredItems.count {
-            selectedIndex = max(0, filteredItems.count - 1)
+        if selectedIndex >= filteredDecorators.count {
+            selectedIndex = max(0, filteredDecorators.count - 1)
+        }
+    }
+
+    /// Cleans up all decorator images to free memory (call when panel closes)
+    func cleanupAllDecoratorImages() {
+        for decorator in decoratorCache.values {
+            decorator.cleanupImages()
         }
     }
 
     // MARK: - Clipboard Actions
 
     func copyToClipboard(_ item: ClipboardItem) {
-        let pasteboard = NSPasteboard.general
-        pasteboard.clearContents()
-
-        switch item.itemType {
-        case .text, .rtf:
-            pasteboard.setString(item.textContent ?? "", forType: .string)
-        case .image:
-            if let imageData = item.imageData {
-                pasteboard.setData(imageData, forType: .png)
-            }
-        case .file:
-            if let urls = item.fileURLs {
-                pasteboard.writeObjects(urls as [NSURL])
-            }
-        }
-
+        // Use PasteHelper for multi-format support
+        PasteHelper.writeToClipboard(
+            item: item,
+            pasteboard: NSPasteboard.general,
+            asPlainText: false
+        )
         historyManager.moveToTop(item)
     }
 

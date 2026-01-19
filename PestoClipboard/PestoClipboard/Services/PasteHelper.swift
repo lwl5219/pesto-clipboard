@@ -31,8 +31,11 @@ struct PasteHelper {
             }
 
         case .image:
-            if let imageData = item.imageData {
-                pasteboard.setData(imageData, forType: .png)
+            if !writeMultiFormatContents(item.contents, to: pasteboard) {
+                // Fallback for legacy items without multi-format content
+                if let imageData = item.imageData {
+                    pasteboard.setData(imageData, forType: .png)
+                }
             }
 
         case .file:
@@ -49,6 +52,32 @@ struct PasteHelper {
     /// This allows ClipboardMonitor to detect and ignore clipboard changes from Pesto itself
     private static func addPestoMarker(to pasteboard: NSPasteboard) {
         pasteboard.setData(Data(), forType: ClipboardMonitor.pestoPasteboardType)
+    }
+
+    /// Writes all stored content formats to the pasteboard, preserving original order.
+    /// Uses declareTypes to ensure all formats are available to receiving apps.
+    /// - Returns: true if contents were written, false if contents was nil or empty
+    private static func writeMultiFormatContents(
+        _ contents: Set<ClipboardItemContent>?,
+        to pasteboard: NSPasteboard
+    ) -> Bool {
+        guard let contents = contents, !contents.isEmpty else { return false }
+
+        // Sort by original order (preserves source app's preferred format order)
+        let sortedContents = contents.sorted { $0.order < $1.order }
+
+        // Declare all types first (including Pesto marker), then set data
+        var types = sortedContents.compactMap { $0.value != nil ? $0.pasteboardType : nil }
+        types.append(ClipboardMonitor.pestoPasteboardType)
+        pasteboard.declareTypes(types, owner: nil)
+
+        for content in sortedContents {
+            if let data = content.value {
+                pasteboard.setData(data, forType: content.pasteboardType)
+            }
+        }
+
+        return true
     }
 
     /// Checks if a pasteboard contains RTF data

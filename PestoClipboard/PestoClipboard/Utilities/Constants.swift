@@ -20,9 +20,6 @@ enum Constants {
 
     // MARK: - Images
 
-    /// Maximum image size to store in bytes (5MB)
-    static let maxImageSizeBytes = 5_000_000
-
     /// Maximum thumbnail dimension in pixels
     static let thumbnailMaxSize: CGFloat = 128
 

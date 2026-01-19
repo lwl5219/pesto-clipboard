@@ -12,6 +12,7 @@ protocol ClipboardHistoryManaging: AnyObject {
     func searchItems(query: String)
     func addTextItem(_ text: String, rtfData: Data?)
     func addImageItem(imageData: Data, thumbnailData: Data?)
+    func addImageItem(contents: [ClipboardMonitor.PasteboardContent], thumbnailData: Data?)
     func addFileItem(urls: [URL])
     func moveToTop(_ item: ClipboardItem)
     func togglePin(_ item: ClipboardItem)
@@ -126,16 +127,60 @@ class ClipboardHistoryManager: ObservableObject, ClipboardHistoryManaging {
             return
         }
 
-        // Limit image size
-        let storedImageData = imageData.count <= Constants.maxImageSizeBytes ? imageData : nil
+        // No size limit - Core Data external storage handles large blobs
+        let item = ClipboardItem.create(
+            in: viewContext,
+            type: .image,
+            imageData: imageData,
+            thumbnailData: thumbnailData,
+            contentHash: hash
+        )
+        item.totalSizeBytes = Int64(imageData.count)
+
+        saveAndRefresh()
+        pruneIfNeeded()
+    }
+
+    func addImageItem(contents: [ClipboardMonitor.PasteboardContent], thumbnailData: Data?) {
+        guard !contents.isEmpty else { return }
+
+        // Compute hash from all content data combined for duplicate detection
+        let combinedData = contents.reduce(Data()) { $0 + $1.data }
+        let hash = computeHash(for: combinedData)
+
+        // Check for duplicate
+        if let existingItem = findItem(byHash: hash) {
+            moveToTop(existingItem)
+            return
+        }
+
+        // Store primary image data (prefer PNG/TIFF for backward compatibility)
+        let primaryData = contents.first { $0.type == NSPasteboard.PasteboardType.png.rawValue }?.data
+            ?? contents.first { $0.type == NSPasteboard.PasteboardType.tiff.rawValue }?.data
+            ?? contents.first?.data
 
         let item = ClipboardItem.create(
             in: viewContext,
             type: .image,
-            imageData: storedImageData,
+            imageData: primaryData,
             thumbnailData: thumbnailData,
             contentHash: hash
         )
+
+        // Calculate total size
+        let totalSize = contents.reduce(0) { $0 + $1.data.count }
+        item.totalSizeBytes = Int64(totalSize)
+
+        // Store all formats in the contents relationship (preserving original order)
+        for (index, content) in contents.enumerated() {
+            let _ = ClipboardItemContent.create(
+                in: viewContext,
+                type: content.type,
+                value: content.data,
+                order: Int16(index),
+                item: item
+            )
+        }
 
         saveAndRefresh()
         pruneIfNeeded()

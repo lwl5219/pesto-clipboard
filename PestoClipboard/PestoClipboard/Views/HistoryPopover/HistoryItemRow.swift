@@ -2,7 +2,7 @@ import SwiftUI
 import UniformTypeIdentifiers
 
 struct HistoryItemRow: View {
-    let item: ClipboardItem
+    @ObservedObject var decorator: ClipboardItemDecorator
     let index: Int
     let isSelected: Bool
     var onToggleStar: () -> Void = {}
@@ -15,9 +15,9 @@ struct HistoryItemRow: View {
             Button {
                 onToggleStar()
             } label: {
-                Image(systemName: item.isPinned ? "star.fill" : "star")
+                Image(systemName: decorator.isPinned ? "star.fill" : "star")
                     .font(.system(size: 13))
-                    .foregroundStyle(item.isPinned ? .yellow : .secondary.opacity(0.4))
+                    .foregroundStyle(decorator.isPinned ? .yellow : .secondary.opacity(0.4))
                     .frame(width: 20, height: 20)
                     .contentShape(Rectangle())
             }
@@ -64,36 +64,36 @@ struct HistoryItemRow: View {
     // MARK: - Drag and Drop
 
     private func createItemProvider() -> NSItemProvider {
-        switch item.itemType {
+        switch decorator.itemType {
         case .text:
             // Plain text
-            if let text = item.textContent {
+            if let text = decorator.textContent {
                 return NSItemProvider(object: text as NSString)
             }
 
         case .rtf:
             // Rich text - provide both RTF and plain text
             let provider = NSItemProvider()
-            if let rtfData = item.rtfData {
+            if let rtfData = decorator.item.rtfData {
                 provider.registerDataRepresentation(forTypeIdentifier: UTType.rtf.identifier, visibility: .all) { completion in
                     completion(rtfData, nil)
                     return nil
                 }
             }
-            if let text = item.textContent {
+            if let text = decorator.textContent {
                 provider.registerObject(text as NSString, visibility: .all)
             }
             return provider
 
         case .image:
-            // Image data
-            if let imageData = item.imageData, let nsImage = NSImage(data: imageData) {
+            // Image data - use full image for drag
+            if let imageData = decorator.fullImageData, let nsImage = NSImage(data: imageData) {
                 return NSItemProvider(object: nsImage)
             }
 
         case .file:
             // File URLs
-            if let urls = item.fileURLs, let firstURL = urls.first {
+            if let urls = decorator.fileURLs, let firstURL = urls.first {
                 return NSItemProvider(object: firstURL as NSURL)
             }
         }
@@ -112,7 +112,7 @@ struct HistoryItemRow: View {
 
     @ViewBuilder
     private var contentPreview: some View {
-        switch item.itemType {
+        switch decorator.itemType {
         case .text, .rtf:
             textPreview
 
@@ -127,17 +127,17 @@ struct HistoryItemRow: View {
     private var textPreview: some View {
         VStack(alignment: .leading, spacing: 2) {
             // Check if it looks like a URL
-            if let text = item.textContent, isURL(text) {
+            if let text = decorator.textContent, isURL(text) {
                 Text(text)
                     .font(.system(size: 13, design: .default))
                     .foregroundStyle(.blue)
                     .lineLimit(2)
-            } else if let nsAttributedString = item.attributedString {
+            } else if let nsAttributedString = decorator.attributedString {
                 // Display rich text with formatting
                 Text(attributedPreview(from: nsAttributedString))
                     .lineLimit(3)
             } else {
-                Text(item.previewText)
+                Text(decorator.previewText)
                     .font(.system(size: 13))
                     .foregroundStyle(.primary)
                     .lineLimit(3)
@@ -200,16 +200,17 @@ struct HistoryItemRow: View {
 
     private var imagePreview: some View {
         HStack(alignment: .center, spacing: 8) {
-            // Thumbnail
-            if let thumbnail = item.thumbnailImage {
+            // Thumbnail (lazy loaded via decorator)
+            if let thumbnail = decorator.thumbnailImage {
                 Image(nsImage: thumbnail)
                     .resizable()
                     .aspectRatio(contentMode: .fill)
                     .frame(width: 36, height: 36)
                     .clipShape(RoundedRectangle(cornerRadius: 4))
             } else {
-                Image(systemName: "photo")
-                    .font(.system(size: 16))
+                // Show loading placeholder while thumbnail is being loaded
+                ProgressView()
+                    .scaleEffect(0.6)
                     .frame(width: 36, height: 36)
                     .background(Color.secondary.opacity(0.2))
                     .clipShape(RoundedRectangle(cornerRadius: 4))
@@ -220,8 +221,9 @@ struct HistoryItemRow: View {
                     .font(.system(size: 13))
                     .foregroundStyle(.primary)
 
-                if let imageData = item.imageData {
-                    Text(formatFileSize(imageData.count))
+                // Use cached totalSizeBytes (no data load needed)
+                if decorator.totalSizeBytes > 0 {
+                    Text(formatFileSize(Int(decorator.totalSizeBytes)))
                         .font(.system(size: 11))
                         .foregroundStyle(.secondary)
                 }
@@ -238,7 +240,7 @@ struct HistoryItemRow: View {
                 .frame(width: 24, height: 24)
 
             VStack(alignment: .leading, spacing: 1) {
-                if let urls = item.fileURLs {
+                if let urls = decorator.fileURLs {
                     if urls.count == 1 {
                         Text(urls[0].lastPathComponent)
                             .font(.system(size: 13))
@@ -267,7 +269,7 @@ struct HistoryItemRow: View {
     // MARK: - Helpers
 
     private var fileSystemImage: String {
-        guard let urls = item.fileURLs, let firstURL = urls.first else {
+        guard let urls = decorator.fileURLs, let firstURL = urls.first else {
             return "doc"
         }
 
@@ -313,10 +315,11 @@ struct HistoryItemRow: View {
 #Preview {
     VStack {
         HistoryItemRow(
-            item: {
+            decorator: {
                 let manager = ClipboardHistoryManager(persistenceController: PersistenceController(inMemory: true))
                 let context = manager.viewContext
-                return ClipboardItem.create(in: context, type: .text, textContent: "Hello, World! This is a sample clipboard item with some longer text.", contentHash: "abc123")
+                let item = ClipboardItem.create(in: context, type: .text, textContent: "Hello, World! This is a sample clipboard item with some longer text.", contentHash: "abc123")
+                return ClipboardItemDecorator(item: item)
             }(),
             index: 1,
             isSelected: true
