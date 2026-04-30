@@ -457,7 +457,7 @@ struct SettingsToHistoryManagerIntegrationTests {
         // Save original setting
         let originalLimit = SettingsManager.shared.historyLimit
 
-        // Set a high limit initially (within valid range 50-5000)
+        // Set a high limit initially within the valid range
         SettingsManager.shared.historyLimit = 200
 
         // Create manager without override so it uses SettingsManager
@@ -494,7 +494,7 @@ struct SettingsToHistoryManagerIntegrationTests {
         // Save original setting
         let originalLimit = SettingsManager.shared.historyLimit
 
-        // Set a high limit initially (within valid range 50-5000)
+        // Set a high limit initially within the valid range
         SettingsManager.shared.historyLimit = 200
 
         // Create manager without override
@@ -538,7 +538,7 @@ struct SettingsToHistoryManagerIntegrationTests {
         // Save original setting
         let originalLimit = SettingsManager.shared.historyLimit
 
-        // Set initial limit (within valid range 50-5000)
+        // Set initial limit within the valid range
         SettingsManager.shared.historyLimit = 50
 
         // Create manager without override

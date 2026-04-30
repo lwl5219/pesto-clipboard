@@ -7,8 +7,14 @@ enum Constants {
     /// Default maximum number of clipboard items to store
     static let defaultHistoryLimit = 500
 
+    /// Minimum number of clipboard items to store
+    static let minHistoryLimit = 50
+
+    /// Maximum number of clipboard items to store
+    static let maxHistoryLimit = 100000
+
     /// Range for history limit setting in preferences
-    static let historyLimitRange = 50...5000
+    static let historyLimitRange = minHistoryLimit...maxHistoryLimit
 
     /// Step size for history limit stepper
     static let historyLimitStep = 50

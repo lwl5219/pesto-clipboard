@@ -61,8 +61,10 @@ struct SettingsManagerTests {
 
     @Test func historyLimitRange() {
         // Verify the history limit range constants
-        #expect(Constants.historyLimitRange.lowerBound == 50)
-        #expect(Constants.historyLimitRange.upperBound == 5000)
+        #expect(Constants.minHistoryLimit == 50)
+        #expect(Constants.maxHistoryLimit == 100000)
+        #expect(Constants.historyLimitRange.lowerBound == Constants.minHistoryLimit)
+        #expect(Constants.historyLimitRange.upperBound == Constants.maxHistoryLimit)
     }
 
     @Test func historyLimitStep() {
