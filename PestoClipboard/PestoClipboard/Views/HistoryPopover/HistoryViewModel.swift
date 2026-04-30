@@ -264,6 +264,11 @@ class HistoryViewModel: ObservableObject {
         }
     }
 
+    func onPanelHide() {
+        selectedIndex = 0
+        searchText = ""
+    }
+
     func clearError() {
         historyManager.lastError = nil
     }

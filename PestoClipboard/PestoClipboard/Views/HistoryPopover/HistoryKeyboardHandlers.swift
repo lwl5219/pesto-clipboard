@@ -65,6 +65,11 @@ extension View {
                 deferred { focusedField.wrappedValue = .search }
                 return .handled
             }
+            .onKeyPress(keys: ["/"]) { _ in
+                guard !isSearchFocused else { return .ignored }
+                deferred { focusedField.wrappedValue = .search }
+                return .handled
+            }
             .onKeyPress(keys: ["1", "2", "3", "4", "5", "6", "7", "8", "9"]) { press in
                 guard !isSearchFocused else { return .ignored }
                 let characters = press.characters

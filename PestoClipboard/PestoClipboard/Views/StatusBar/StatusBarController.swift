@@ -24,7 +24,7 @@ class StatusBarController {
         AppEventBus.shared.publisher(for: .hideHistoryPanel)
             .receive(on: DispatchQueue.main)
             .sink { [weak self] in
-                self?.hidePanel()
+                self?.hidePanel(notify: false)
             }
             .store(in: &cancellables)
 
@@ -162,8 +162,12 @@ class StatusBarController {
         AppEventBus.shared.showHistoryPanel()
     }
 
-    func hidePanel() {
+    func hidePanel(notify: Bool = true) {
+        guard panel.isVisible else { return }
         panel.hidePanel()
+        if notify {
+            AppEventBus.shared.hideHistoryPanel()
+        }
     }
 
     deinit {

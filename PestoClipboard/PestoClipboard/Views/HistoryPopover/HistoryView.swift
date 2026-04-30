@@ -67,6 +67,10 @@ struct HistoryView: View {
             focusedField = .list
             viewModel.onPanelShow()
         }
+        .onReceive(AppEventBus.shared.publisher(for: .hideHistoryPanel)) {
+            focusedField = nil
+            viewModel.onPanelHide()
+        }
         .onReceive(AppEventBus.shared.publisher(for: .deleteSelectedItem)) {
             guard !isSearchFocused else { return }
             viewModel.deleteSelectedItem()
