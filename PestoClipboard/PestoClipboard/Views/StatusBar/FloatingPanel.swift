@@ -160,6 +160,22 @@ class FloatingPanel: NSPanel {
 
 // MARK: - Key-accepting Hosting View
 
-class KeyAcceptingHostingView<Content: View>: NSHostingView<Content> {
+final class KeyAcceptingHostingView: NSView {
+    private let hostingView: NSHostingView<AnyView>
+
+    init<Content: View>(rootView: Content) {
+        self.hostingView = NSHostingView(rootView: AnyView(rootView))
+        super.init(frame: .zero)
+
+        hostingView.frame = bounds
+        hostingView.autoresizingMask = [.width, .height]
+        addSubview(hostingView)
+    }
+
+    @available(*, unavailable)
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+
     override var acceptsFirstResponder: Bool { true }
 }
