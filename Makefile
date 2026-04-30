@@ -6,23 +6,25 @@ PROJECT_DIR = PestoClipboard
 BUILD_DIR = build
 VERSION ?= $(shell git describe --tags --abbrev=0 2>/dev/null | sed 's/^v//' || echo "dev")
 DMG_NAME = PestoClipboard-$(VERSION).dmg
+XCODE_DEVELOPER_DIR := $(shell if [ -d /Applications/Xcode.app/Contents/Developer ]; then printf '%s' /Applications/Xcode.app/Contents/Developer; fi)
+XCODEBUILD = $(if $(XCODE_DEVELOPER_DIR),DEVELOPER_DIR=$(XCODE_DEVELOPER_DIR) )xcodebuild
 
 build:
-	xcodebuild -project $(PROJECT_DIR)/$(PROJECT_NAME).xcodeproj \
+	$(XCODEBUILD) -project $(PROJECT_DIR)/$(PROJECT_NAME).xcodeproj \
 		-scheme $(PROJECT_NAME) \
 		-configuration Release \
 		-derivedDataPath $(BUILD_DIR) \
 		build
 
 build-debug:
-	xcodebuild -project $(PROJECT_DIR)/$(PROJECT_NAME).xcodeproj \
+	$(XCODEBUILD) -project $(PROJECT_DIR)/$(PROJECT_NAME).xcodeproj \
 		-scheme $(PROJECT_NAME) \
 		-configuration Debug \
 		-derivedDataPath $(BUILD_DIR) \
 		build
 
 test:
-	xcodebuild test \
+	$(XCODEBUILD) test \
 		-project $(PROJECT_DIR)/$(PROJECT_NAME).xcodeproj \
 		-scheme $(PROJECT_NAME) \
 		-configuration Debug \
