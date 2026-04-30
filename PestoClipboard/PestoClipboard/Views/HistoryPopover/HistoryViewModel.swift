@@ -178,6 +178,16 @@ class HistoryViewModel: ObservableObject {
         pasteItem(filteredItems[index], asPlainText: asPlainText, onDismiss: onDismiss)
     }
 
+    func copyItem(id: UUID) {
+        guard let item = historyManager.items.first(where: { $0.id == id }) else { return }
+        copyToClipboard(item)
+    }
+
+    func editItem(id: UUID) {
+        guard let item = historyManager.items.first(where: { $0.id == id }) else { return }
+        itemToEdit = item
+    }
+
     private func simulatePaste() {
         guard AccessibilityHelper.hasPermission else {
             print("⚠️ Paste failed: No accessibility permission")
@@ -209,9 +219,27 @@ class HistoryViewModel: ObservableObject {
     func deleteSelectedItem() {
         guard selectedIndex >= 0, selectedIndex < filteredItems.count else { return }
 
-        let item = filteredItems[selectedIndex]
+        deleteItem(id: filteredItems[selectedIndex].id, atFilteredIndex: selectedIndex)
+    }
+
+    func deleteItem(id: UUID, atFilteredIndex index: Int? = nil) {
+        let targetIndex = index ?? filteredItems.firstIndex { $0.id == id }
+        guard let targetIndex else { return }
+
         suppressScrollToTop = true
-        historyManager.deleteItem(item)
+        adjustSelectionBeforeDeletingItem(at: targetIndex)
+
+        // Defer mutation until after the menu/key event finishes to avoid stale row/menu state.
+        DispatchQueue.main.async { [weak self] in
+            guard let self else { return }
+            guard let item = self.historyManager.items.first(where: { $0.id == id }) else { return }
+
+            self.historyManager.deleteItem(item)
+
+            if !self.searchText.isEmpty {
+                self.historyManager.searchItems(query: self.searchText)
+            }
+        }
     }
 
     // MARK: - Item Tap Handler
@@ -238,5 +266,13 @@ class HistoryViewModel: ObservableObject {
 
     func clearError() {
         historyManager.lastError = nil
+    }
+
+    private func adjustSelectionBeforeDeletingItem(at deletedIndex: Int) {
+        guard selectedIndex >= 0 else { return }
+
+        if deletedIndex < selectedIndex {
+            selectedIndex -= 1
+        }
     }
 }

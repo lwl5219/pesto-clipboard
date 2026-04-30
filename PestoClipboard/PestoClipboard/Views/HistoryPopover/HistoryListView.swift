@@ -35,7 +35,8 @@ struct HistoryListView: View {
                     }
                     .contextMenu {
                         ItemContextMenu(
-                            item: decorator.item,
+                            itemID: decorator.id,
+                            itemType: decorator.itemType,
                             index: index,
                             viewModel: viewModel,
                             onDismiss: onDismiss
@@ -81,14 +82,15 @@ struct HistoryListView: View {
 // MARK: - Item Context Menu
 
 struct ItemContextMenu: View {
-    let item: ClipboardItem
+    let itemID: UUID
+    let itemType: ClipboardItemType
     let index: Int
     @ObservedObject var viewModel: HistoryViewModel
     let onDismiss: () -> Void
 
     var body: some View {
         Button {
-            viewModel.copyToClipboard(item)
+            viewModel.copyItem(id: itemID)
         } label: {
             Label("Copy to Clipboard", systemImage: "doc.on.doc")
         }
@@ -107,11 +109,11 @@ struct ItemContextMenu: View {
             Label("Paste as Plaintext", systemImage: "textformat")
         }
 
-        if item.itemType == .text || item.itemType == .rtf {
+        if itemType == .text || itemType == .rtf {
             Divider()
 
             Button {
-                viewModel.itemToEdit = item
+                viewModel.editItem(id: itemID)
             } label: {
                 Label("Edit", systemImage: "pencil")
             }
@@ -120,7 +122,7 @@ struct ItemContextMenu: View {
         Divider()
 
         Button(role: .destructive) {
-            viewModel.historyManager.deleteItem(item)
+            viewModel.deleteItem(id: itemID, atFilteredIndex: index)
         } label: {
             Label("Delete", systemImage: "trash")
         }

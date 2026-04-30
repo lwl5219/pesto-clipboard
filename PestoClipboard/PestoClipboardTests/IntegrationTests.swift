@@ -237,6 +237,69 @@ struct HistoryManagerToUIIntegrationTests {
         viewModel.moveSelection(by: 1)
         #expect(viewModel.selectedIndex == 2)
     }
+
+    @Test func viewModelDeleteItemByIDKeepsSelectionStable() async throws {
+        let (manager, monitor) = createSetup()
+        let viewModel = HistoryViewModel(historyManager: manager, clipboardMonitor: monitor)
+
+        manager.addTextItem("Item 1")
+        manager.addTextItem("Item 2")
+        manager.addTextItem("Item 3")
+
+        let initiallySelectedItemID = viewModel.filteredItems[1].id
+        let deletedItemID = viewModel.filteredItems[0].id
+
+        viewModel.selectedIndex = 1
+        viewModel.deleteItem(id: deletedItemID, atFilteredIndex: 0)
+
+        try await Task.sleep(nanoseconds: 50_000_000) // 50ms
+
+        #expect(viewModel.filteredItems.count == 2)
+        #expect(viewModel.selectedIndex == 0)
+        #expect(viewModel.filteredItems[viewModel.selectedIndex].id == initiallySelectedItemID)
+    }
+
+    @Test func viewModelDeleteItemByIDHandlesDeletingSelectedItem() async throws {
+        let (manager, monitor) = createSetup()
+        let viewModel = HistoryViewModel(historyManager: manager, clipboardMonitor: monitor)
+
+        manager.addTextItem("Item 1")
+        manager.addTextItem("Item 2")
+        manager.addTextItem("Item 3")
+
+        let expectedNextItemID = viewModel.filteredItems[2].id
+        let deletedItemID = viewModel.filteredItems[1].id
+
+        viewModel.selectedIndex = 1
+        viewModel.deleteItem(id: deletedItemID, atFilteredIndex: 1)
+        viewModel.adjustSelectionAfterItemsChange()
+
+        try await Task.sleep(nanoseconds: 50_000_000) // 50ms
+        viewModel.adjustSelectionAfterItemsChange()
+
+        #expect(viewModel.filteredItems.count == 2)
+        #expect(viewModel.selectedIndex == 1)
+        #expect(viewModel.filteredItems[viewModel.selectedIndex].id == expectedNextItemID)
+    }
+
+    @Test func viewModelDeleteItemByIDHandlesDeletingOnlyItem() async throws {
+        let (manager, monitor) = createSetup()
+        let viewModel = HistoryViewModel(historyManager: manager, clipboardMonitor: monitor)
+
+        manager.addTextItem("Only item")
+
+        let deletedItemID = viewModel.filteredItems[0].id
+
+        viewModel.selectedIndex = 0
+        viewModel.deleteItem(id: deletedItemID, atFilteredIndex: 0)
+        viewModel.adjustSelectionAfterItemsChange()
+
+        try await Task.sleep(nanoseconds: 50_000_000) // 50ms
+        viewModel.adjustSelectionAfterItemsChange()
+
+        #expect(viewModel.filteredItems.isEmpty)
+        #expect(viewModel.selectedIndex == 0)
+    }
 }
 
 // MARK: - Event Bus Integration Tests
