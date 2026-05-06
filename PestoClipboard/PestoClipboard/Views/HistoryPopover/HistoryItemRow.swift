@@ -3,6 +3,7 @@ import UniformTypeIdentifiers
 
 struct HistoryItemRow: View {
     @ObservedObject var decorator: ClipboardItemDecorator
+    @ObservedObject var item: ClipboardItem
     let index: Int
     let isSelected: Bool
     var onToggleStar: () -> Void = {}
@@ -15,9 +16,9 @@ struct HistoryItemRow: View {
             Button {
                 onToggleStar()
             } label: {
-                Image(systemName: decorator.isPinned ? "star.fill" : "star")
+                Image(systemName: item.isPinned ? "star.fill" : "star")
                     .font(.system(size: 13))
-                    .foregroundStyle(decorator.isPinned ? .yellow : .secondary.opacity(0.4))
+                    .foregroundStyle(item.isPinned ? .yellow : .secondary.opacity(0.4))
                     .frame(width: 20, height: 20)
                     .contentShape(Rectangle())
             }
@@ -320,6 +321,11 @@ struct HistoryItemRow: View {
                 let context = manager.viewContext
                 let item = ClipboardItem.create(in: context, type: .text, textContent: "Hello, World! This is a sample clipboard item with some longer text.", contentHash: "abc123")
                 return ClipboardItemDecorator(item: item)
+            }(),
+            item: {
+                let manager = ClipboardHistoryManager(persistenceController: PersistenceController(inMemory: true))
+                let context = manager.viewContext
+                return ClipboardItem.create(in: context, type: .text, textContent: "Hello, World! This is a sample clipboard item with some longer text.", contentHash: "abc123")
             }(),
             index: 1,
             isSelected: true

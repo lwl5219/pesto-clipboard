@@ -11,6 +11,7 @@ struct HistoryListView: View {
                 ForEach(Array(viewModel.filteredDecorators.enumerated()), id: \.element.id) { index, decorator in
                     HistoryItemRow(
                         decorator: decorator,
+                        item: decorator.item,
                         index: index + 1,
                         isSelected: index == viewModel.selectedIndex && !isSearchFocused,
                         onToggleStar: { viewModel.historyManager.togglePin(decorator.item) }
